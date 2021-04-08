@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "nosaukums": "Pavasar, pavasar",
+        "dzejolis": "Pavasar, pavasar\n Izdzen gani tīrumā.\n Gani stāv kalniņā,\n Lopi mauj lejiņā."
+    },
+    {
+        "id": 2,
+        "nosaukums": "Ozols auga Daugavā",
+        "dzejolis": "Ozols auga Daugavā\n Ledainām lapiņām\n Tur Saulīte miglu meta,\n Vai bij ziema, vai vasara."
+    },
+    {
+        "id": 3,
+        "nosaukums": "Simtu cepu kukulīšu",
+        "dzejolis": "Simtu cepu kukulīšu,\n Ziemassvētku gaidīdama:\n Simtiņš nāca ķekatnieku\n Tai vienā vakarā."
+    },
+    {
+        "id": 4,
+        "nosaukums": "Teci, teci, līčupīte",
+        "dzejolis": "Teci, teci, līčupīte,\n Sijādama, rotādama:\n Sijādama zeltu nes,\n Rotādama sidrabinu."
+    },
+    {
+        "id": 5,
+        "nosaukums": "Saule rāja Mēnestiņu",
+        "dzejolis": "Saule rāja Mēnestiņu,\n Kam tas gaiši nespīdēja;\n Mēnestiņš atbildēja:\n Tev dieniņa, man naksniņa;\n Tev dieniņa ar ļaudīm,\n Man naksniņa ar zvaigznēm."
+    }
+]

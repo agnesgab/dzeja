@@ -1,0 +1,58 @@
+<!-- address http://192.168.1.103:8080 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="name">Nosaukums</h2>
+      <p class="poem">dzejam</p>
+    </div>
+
+    <script>
+      function getData() {
+        fetch("dati.json")
+          .then((response) => {
+            return response.json();
+          })
+          .then((data) => {
+            console.log(data);
+
+            //id
+            const poemId = data.map((result) => result.id);
+            console.log(poemId);
+            //nosaukumi
+            const poemNameResults = data.map((result) => result.nosaukums);
+            console.log(poemNameResults);
+            //dzejoļi
+            const poemTextResults = data.map((result) => result.dzejolis);
+            console.log(poemTextResults);
+          });
+
+        showPoems();
+
+        //Kā iznest definētos poemNameResults un poemTextResults ārpus getData funkcijas, lai nav undefined?
+      }
+
+      getData();
+
+      //attēlot VISUS dzejoļus
+      function showPoems(poems) {
+        const poemContainer = document.querySelector(".container");
+        poemContainer.innerHTML = "";
+
+        //attēlot nosaukumus
+        //poemNameResults - undefined
+        poemNameResults.forEach((result) => {
+          const name = document.createElement("h2");
+          poemContainer.appendChild(name);
+        });
+      }
+    </script>
+  </body>
+</html>
