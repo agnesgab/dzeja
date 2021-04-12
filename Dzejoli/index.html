@@ -1,64 +1,87 @@
-<!-- address http://192.168.1.103:8080 -->
-
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-</head>
+  <body>
+    <div class="poem-wrapper">
+      <header>
+        <h1>Dzejoļi</h1>
+      </header>
+      <div class="search-form-div">
+        <form>
+          <label class="test">test, pavasar, vasara, haha</label>
+          <input type="text" id="input-text" placeholder="Meklēt..." />
+          <button type="submit" id="submit-btn">Meklēt</button>
+        </form>
+      </div>
 
-<body>
-  <div class="container">
-    <h2 class="name">Nosaukums</h2>
-    <p class="poem">dzejam</p>
-  </div>
+      <div class="results-container" id="results">
+        <div class="poem-card">
+          <h2 class="name"></h2>
+          <p class="poem"></p>
+        <div>
+      </div>
+    </div>
 
-  <script>
-    function getData() {
-      fetch("dati.json")
-        .then((response) => {
-          return response.json();
-        })
-        .then((data) => {
-          console.log(data);
+    <script>
+      const form = document.querySelector("form");
+      const searchBar = document.getElementById("input-text");
+      const resultsDiv = document.getElementById("results");
+      resultsDiv.style.visibility = "hidden";
 
-          //   //id
-          //   const poemId = data.map((result) => result.id);
-          //   console.log(poemId);
-          //   //nosaukumi
-          //   const poemNameResults = data.map((result) => result.nosaukums);
-          //   console.log(poemNameResults);
-          //   //dzejoļi
-          //   const poemTextResults = data.map((result) => result.dzejolis);
-          //   console.log(poemTextResults);
-          // });
+      //Fetch
+      const searchPoems = async (searchText) => {
+        const response = await fetch("dati.json");
+        const poems = await response.json();
 
-          showPoems(data);
+        console.log(poems);
 
-          //Kā iznest definētos poemNameResults un poemTextResults ārpus getData funkcijas, lai nav undefined?
-        })
-    }
+        //Meklēt/filtrēt JSON datus
+        let matches = poems.filter((poem) => {
+          resultsDiv.style.visibility = "visible";
+          const regex = new RegExp(`${searchText}`, "gi");
+          return poem.nosaukums.match(regex) || poem.dzejolis.match(regex);
+        });
+        if (searchText.length === 0) {
+          matches = [];
+          resultsDiv.innerHTML = "";
+        }
+        showPoems(matches);
+      };
 
-    getData();
+      //Attēlot izfiltrēto HTML
+      const showPoems = (matches) => {
 
-    //attēlot VISUS dzejoļus
-    function showPoems(poems) {
-      console.log(poems)
-      const poemContainer = document.querySelector(".container");
-      poemContainer.innerHTML = "";
+        if (matches.length > 0) {
+          const html = matches
+            .map(
+              (match) => `
+          
+            <div class="poem-card">
+              <h2 class="name">${match.nosaukums}</h2>
+              <p class="poem">${match.dzejolis}</p>
+            </div>  
+          `
+            )
+            .join("");
 
-      //attēlot nosaukumus
-      //poemNameResults - undefined
-      poems.forEach((poem) => {
-        const name = document.createElement("h2");
-        name.innerHTML = poem.nosaukums;
-        poemContainer.appendChild(name);
-      });
-    }
-  </script>
-</body>
+          resultsDiv.innerHTML = html;
+        } else {
+          resultsDiv.innerHTML = "Nekas netika atrasts";
+        }
+      };
 
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        searchPoems(searchBar.value);
+
+      } )
+    </script>
+  </body>
 </html>
