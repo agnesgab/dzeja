@@ -1,47 +1,387 @@
 [
     {
         "id": 1,
-        "nosaukums": "Pavasar, pavasar",
-        "dzejolis": "Pavasar, pavasar\n Izdzen gani tīrumā.\n Gani stāv kalniņā,\n Lopi mauj lejiņā."
+        "tēma": "vārda diena",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Miķelīšu mākonī,<br>Vārds Tavs tinies,<br>Un tik skaistu rudeni<br>Tu pat neatminies."
     },
     {
         "id": 2,
-        "nosaukums": "Ozols auga Daugavā",
-        "dzejolis": "Ozols auga Daugavā\n Ledainām lapiņām\n Tur Saulīte miglu meta,\n Vai bij ziema, vai vasara."
+        "tēma": "vārda diena",
+        "autors": "Jānis Peters",
+        "nosaukums": "",
+        "teksts": "Savs vārds ir katram jānes,<br>Tu skaisti viņu nes -<br>Kā trauku, pilnu gaismas<br>Un pilnu - pasaules."
     },
     {
         "id": 3,
-        "nosaukums": "Simtu cepu kukulīšu",
-        "dzejolis": "Simtu cepu kukulīšu,\n Ziemassvētku gaidīdama:\n Simtiņš nāca ķekatnieku\n Tai vienā vakarā."
+        "tēma": "vārda diena",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Tavs vārds ir tikai ziedlapiņa<br>Pie lielā vārdu koka,<br>Pēc savas gribas liktenis<br>Ko purina un loka."
     },
     {
         "id": 4,
-        "nosaukums": "Teci, teci, līčupīte",
-        "dzejolis": "Teci, teci, līčupīte,\n Sijādama, rotādama:\n Sijādama zeltu nes,\n Rotādama sidrabinu."
+        "tēma": "vārda diena",
+        "autors": "Silva Rēfelde",
+        "nosaukums": "",
+        "teksts": "Bij vasarsvētki, tie pēc meijām smaržo,<br>Tad Jāņi, kas pēc ozoliem.<br>Bet Pēteri pēc svaiga siena<br>Un Anniņas pēc vīgriezēm."
     },
     {
         "id": 5,
-        "nosaukums": "Lai vasara, kam vasara",
-        "dzejolis": "Lai vasara, kam vasara,\nJānīšam, tam vasara:\nTam sadila dzelzu vāģi,\nVasariņu vizinot."
+        "tēma": "vārda diena",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Lai zvaigznes palīdz smaidīt,<br>Mēness mieru lūgt,<br>Vārda dienu svinot,<br>Prieka nedrīkst trūkt!"
     },
     {
         "id": 6,
-        "nosaukums": "Test",
-        "dzejolis": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, sequi!"
+        "tēma": "vārda diena",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Vārdam Tavam, lai ir gods,<br>Ziediem piekrauts lielais pods.<br>Šodien, lai ir smaids uz lūpām,<br>Galds - ar dāvanām un kūkām."
     },
     {
         "id": 7,
-        "nosaukums": "Test",
-        "dzejolis": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet eum architecto perspiciatis? Animi tempore minima pariatur nemo magnam incidunt perspiciatis ea, quod consectetur explicabo doloribus iure nisi amet molestias veritatis."
+        "tēma": "vārda diena",
+        "autors": "Rasma Urtāne",
+        "nosaukums": "",
+        "teksts": "...nes savu vārdu tā kā kroni galvā,<br>Lai piemin to, lai slavas dziesmas dzied!"
     },
     {
         "id": 8,
-        "nosaukums": "Test",
-        "dzejolis": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere commodi sint dolorum ea maiores et numquam, magni iure ad harum rerum dignissimos?"
+        "tēma": "sieviete",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Ideālu attiecību nav... Ir sievietes gudrība neievērot vīrieša muļķību un vīrieša spēks piedot sievietes vājības. Bet ideālais.... atstājiet to seriāliem."
     },
     {
         "id": 9,
-        "nosaukums": "Test",
-        "dzejolis": "Lorem ipsum dolor, sit."
+        "tēma": "sieviete",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Mums, sievietēm ir trīs vecumi:<br>kaitinām tēvu,<br>tracinam vīru,<br>besījam znotu!"
+    },
+    {
+        "id": 10,
+        "tēma": "sieviete",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Ak, Sievietes! Jūs- dzīves žeņšeņs, eliksīrs un prieks,"
+    },
+    {
+        "id": 11,
+        "tēma": "sieviete",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Mana saulīte! Atceries - sievietes plaukstas, pusi pasaules tur!"
+    },
+    {
+        "id": 12,
+        "tēma": "sieviete",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Sieviete nekad nav veca - vecas ir tikai pilsdrupas."
+    },
+    {
+        "id": 13,
+        "tēma": "sieviete",
+        "autors": "Sofija Lorēna",
+        "nosaukums": "",
+        "teksts": "Sieviete pēc 40, ir tik patstāvīga un pašpietiekama, ka viņa pati var izlemt, cik viņai gadu un kur viņai viduklis."
+    },
+    {
+        "id": 14,
+        "tēma": "sieviete",
+        "autors": "Varsana Šīra",
+        "nosaukums": "",
+        "teksts": "Tu esi bīstama, dīvaina un skaista. Tāda, kuru retais zina, kā mīlēt."
+    },
+    {
+        "id": 15,
+        "tēma": "sieviete",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Tu esi sieviete un ziedus pelnījusi esi,<br>Tā vienkārši bez iemesla, tāpat...<br>Par to, ka vienkārši Tu esi,<br>Kādam, vien tepat..."
+    },
+    {
+        "id": 16,
+        "tēma": "sieviete",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Vīrietim sieviete jāredz 5 dzīves situācijās - asaru plūdos, galīgi piedzērušos, neuzkrāsojušos, kailu un kritiskajās dienās, ja vēl nav aizlaidies...tad mīl no sirds"
+    },
+    {
+        "id": 17,
+        "tēma": "sieviete",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Sievietei vajadzīgas trīs lietas: uzmanība, ziedi un bērni - un tās visas no mīļotā vīrieša!"
+    },
+    {
+        "id": 18,
+        "tēma": "sieviete",
+        "autors": "Dž.Donelija",
+        "nosaukums": "",
+        "teksts": "Es varu būt traka, bet es nekad nebūšu ērta."
+    },
+    {
+        "id": 19,
+        "tēma": "sieviete",
+        "autors": "Opra Vinfrija",
+        "nosaukums": "",
+        "teksts": "Domā kā karaliene. Karaliene nebaidās kļūdīties. Kļūda ir pakāpiens uz izcilību."
+    },
+    {
+        "id": 20,
+        "tēma": "sieviete",
+        "autors": "Ronda Hensoma",
+        "nosaukums": "",
+        "teksts": "Vīrietim jādara tas, kas vīrietim jādara. Sievietei jādara tas, ko viņš nespēj."
+    },
+    {
+        "id": 21,
+        "tēma": "sieviete",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Aizmirsti taureņus. Es jūtu visu zoodārzu, kad esmu kopā ar tevi!"
+    },
+    {
+        "id": 22,
+        "tēma": "sieviete",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Vīrieši, sargājiet savas mīļotās, viņas jums uzdāvina divas vissvarīgākās lietas - savu mīlestību un to, kurš sauc jūs par „tēti“."
+    },
+    {
+        "id": 23,
+        "tēma": "sieviete",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Ja sieviete smaida - kāds vīrietis ļoti cenšas."
+    },
+    {
+        "id": 24,
+        "tēma": "sieviete",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Sievietes ir vājais dzimums, bet - kā viņas cērt durvis!"
+    },
+    {
+        "id": 25,
+        "tēma": "sieviete",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Ja vīrietis tevī vienmēr meklē trūkumus, tad nevajag mainīt sevi, bet gan vīrieti."
+    },
+    {
+        "id": 26,
+        "tēma": "sieviete",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Tu ar mani netiktu galā pat tad, ja es nāktu kopā ar instrukciju!"
+    },
+    {
+        "id": 27,
+        "tēma": "sieviete",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Vīrietis – prāts.. sieviete – sirds.<br>Prāts rada gaismu.. sirds – mīlestību.<br>Gaisma palīdz radīt.. Mīlestība palīdz atdzimt.<br>Viņš domā - viņa sapņo,<br>Viņš tur, kur beidzas zeme - viņa tur, kur sākas debesis.. "
+    },
+    {
+        "id": 28,
+        "tēma": "skola",
+        "autors": "Marika Svīķe",
+        "nosaukums": "",
+        "teksts": "Skola ir upe, skolēni – ūdeņi tajā.<br>Ūdeņi aizplūst, upe paliek.<br>Paliek gultne, paliek krasti<br>ieži, atvari, krāces.<br>Upe paliek, tik ūdeņi,<br>ūdeņi vienmēr ir jauni."
+    },
+    {
+        "id": 29,
+        "tēma": "skola",
+        "autors": "A.Grandāns",
+        "nosaukums": "",
+        "teksts": "Es skolotāju salīdzinu ar aku - katrs audzēknis pasmeļ no tās, cik vēlas. Cits varbūt iemērc tikai pirksta galu, cits paņem sauju valgmes, cits smeļ no tās ar spaiņiem, smeļ, smeļ un neapstājas. Lai svētīgas ir šīs zināšanu slāpes! Lai tās nekad nepāriet!"
+    },
+    {
+        "id": 30,
+        "tēma": "skola",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Kad pienāks laiku, un tevis vairs nebūs, paliks tavi bērni un runās tavā balsī. Redzēs pasauli tavām acīm. Un viņu bērni piedzīvos to pašu. Skolotājs turpina būt caur saviem skolēniem. Vecāki caur saviem bērniem. Tāda ir lietu kārtība. Tūkstoši pirms tevis un tūkstoši pēc. Turpinājums. Pieliec roku. Ieliec sirdi. Tajā, ko dari. Lai top labāka pasaule. Caur tevi."
+    },
+    {
+        "id": 31,
+        "tēma": "ziemassvētki",
+        "autors": "Ārija Elksne",
+        "nosaukums": "",
+        "teksts": "Šīs klusās stundas kluso gaitu<br>Ar vārdiem netraucēsim mēs,<br>Vien liesma liesmai, zvaigzne zvaigznei<br>Un dvēsle dvēslei uzmirdzēs."
+    },
+    {
+        "id": 32,
+        "tēma": "ziemassvētki",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Ticība visu padara iespējamu. Cerība ir tā, kas liek visam virzīties uz priekšu. Mīlestība padara visu skaistu. Lai jums šajos Ziemassvētkos tas viss tiek. Priecīgus svētkus."
+    },
+    {
+        "id": 33,
+        "tēma": "ziemassvētki",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Sajust baltu prieku, aizdegt īsto zvaigzni, mainīties un atjaunoties!"
+    },
+    {
+        "id": 34,
+        "tēma": "ziemassvētki",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Nemēri to, cik augsta ir tava Ziemassvētku eglīte. Mēri to, cik mīlestības ir tavā sirdī. Lai svētīgi Ziemassvētki."
+    },
+    {
+        "id": 35,
+        "tēma": "ziemassvētki",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Neaizmirstiet, ka galvenais gadalaiks ir tas, kas jūsu sirdīs, nevis aiz loga."
+    },
+    {
+        "id": 36,
+        "tēma": "ziemassvētki",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Ziema ir tāds gadalaiks, kad cilvēkiem ir jāsilda vienam otru ar vārdiem, jūtām un rūpēm."
+    },
+    {
+        "id": 37,
+        "tēma": "ziemassvētki",
+        "autors": "",
+        "nosaukums": "Lūgums Ziemassvētku vecītim.",
+        "teksts": "Paliec zem eglītes 5 dāvanas. Pirmo piepildi ar veselību, otro ar veiksmi, trešo ar labestību, ceturto ar pacietību, piektajā ieliec ticību. Un vēl- ļoti lūdzu-apsien visas dāvanas ar laimes lenti!"
+    },
+    {
+        "id": 38,
+        "tēma": "mīlestība",
+        "autors": "Kornēlija Apškrūma",
+        "nosaukums": "",
+        "teksts": "Vienmēr un visur –<br>Lietū, saulē un sniegā,<br>Laikā un liktenī.<br>Kas jūs uz delnas tur,<br>Pagurumā,<br>Bēdu tumsā un priekā –<br>Esiet viens otram<br>Pavards un ugunskurs."
+    },
+    {
+        "id": 39,
+        "tēma": "mīlestība",
+        "autors": "Akvelīna Līvmane",
+        "nosaukums": "",
+        "teksts": "Katrā sievietē mīt pērle. Katrā pērlē ir vesela pasaule, un tajā dzīvo princese un gaida lielo balli. Ir tik svarīgi pazaudēt kristāla kurpīti, bet vēl svarīgāk ir būt mājās tad, kad garām brauc princis…"
+    },
+    {
+        "id": 40,
+        "tēma": "mīlestība",
+        "autors": "Jānis Ziemeļnieks",
+        "nosaukums": "",
+        "teksts": "No diviem sapņiem,<br>No divām ilgām<br>Viens daiļums mīla<br>Zied mūžībai."
+    },
+    {
+        "id": 41,
+        "tēma": "mīlestība",
+        "autors": "Maija Laukmane",
+        "nosaukums": "",
+        "teksts": "“še mana roka –<br>esmu blakus ne tikai tādēļ<br>lai kāptu kalnā<br>bet dziļumos arī<br><br>še mana roka<br>ja iespēj par nieka sprīdi<br>tev gaitu<br>drošāku darīt<br><br>še mana roka –<br>esmu blakus ne tikai tādēļ<br>lai lidotu priekā<br>bet tad kad ir grūti"
+    },
+    {
+        "id": 42,
+        "tēma": "mīlestība",
+        "autors": "Anda Līce",
+        "nosaukums": "",
+        "teksts": "Mīlestība – lielā pieskaršanās.<br>Kā saule pūpolam,<br>Kā ziedputeksnis drīksnai.<br>Ir mīlestība visu notikšanu sākums."
+    },
+    {
+        "id": 43,
+        "tēma": "mīlestība",
+        "autors": "Jānis Peters",
+        "nosaukums": "",
+        "teksts": "Es Tevi mīlu. Viss ir bijis jau -<br> šis roku mulsums, divas elpas blakus,<br>bet dzirdējusi pasaule vēl nav,<br>kā tieši tev un tieši es to saku."
+    },
+    {
+        "id": 44,
+        "tēma": "mīlestība",
+        "autors": "Ziedonis Purvs",
+        "nosaukums": "",
+        "teksts": "Plauksta gulst plaukstā -<br> mana tavā<br>un tava manā,<br>un tā - tā ir paļaušanās,<br>vēl neapzinoties - kam,<br>bet - šim brīdim,<br>šim brīnumam."
+    },
+    {
+        "id": 45,
+        "tēma": "mīlestība",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Es Tevi meklēju, kam visi vārdi lieki,<br>Vien acīs dvēsele kā puķē rasa mirdz.<br>Tie īsti saprotas, kas klusēdami tiekas,<br>Kam lūpas nerunā, bet runā sirds."
+    },
+    {
+        "id": 46,
+        "tēma": "mīlestība",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Kāda ir atšķirība starp: tu man patīc un es tevi mīlu.<br>Buda atbildējis brīnišķīgi: „Kad tev patīk puķe, tu to noplūc. Kad tu mīli puķi, tu to laisti ik dienas!“ Tie, kas saprot šo, saprot dzīvi!"
+    },
+    {
+        "id": 47,
+        "tēma": "mīlestība",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Mīlestība ir īsta tikai tad, ja vēlies, lai otrs ir laimīgs. Pat tad, ja pats nesi daļa no viņa laimes!"
+    },
+    {
+        "id": 48,
+        "tēma": "mīlestība",
+        "autors": "Teodors Korners",
+        "nosaukums": "",
+        "teksts": "Mīlestībai nav laika mēra.<br>Tā dīgst un zied<br>Un nogatavojas vienlaicīgi -<br>Vienā skaistā stundā."
+    },
+    {
+        "id": 49,
+        "tēma": "mīlestība",
+        "autors": "Valdis Atāls",
+        "nosaukums": "",
+        "teksts": "Mīlestībā vārdu nav.<br>Viss ko mēs runājam, ir tikai satraukums."
+    },
+    {
+        "id": 50,
+        "tēma": "mīlestība",
+        "autors": "Uģis Kuģis",
+        "nosaukums": "",
+        "teksts": "Ja sieviete cenšas palīdzēt vai kaut ko labot savstarpējās attiecībās, viņa to dara nevis tāpēc, ka vēlas vīrieti kritizēt vai noniecināt, bet viņa to dara aiz mīlestības, saredzot iespēju, ka jūsu attiecības var uzplaukt vēl skaistākas."
+    },
+    {
+        "id": 51,
+        "tēma": "mīlestība",
+        "autors": "Alfrēds Krūklis",
+        "nosaukums": "Mīlestība",
+        "teksts": "Viņu nevar nopirkt ar rozēm,<br>kuras pārdod uz bulvāra stūra,<br>ne laimēt loterijā,<br>ne saņemt kā dāvanu gadu mijā.<br>Viņu nevar ne ieelpot sevī<br>kā ceriņu zili sirmu,<br>ne pieradināt<br>kā putnu vai stirnu.<br>Viņas atnākšanu<br>nevar paredzēt iepriekš<br>kā anticiklonu<br>vai tālas vētras zvanu.<br>Neviens arī nezin viņas cenu.<br>Es laimīgs samaksāju<br>ar savu raibo mūžu.<br>Vai daudz?<br>Tie - kas viņai garām gājuši -<br>brīnās.<br>Tie- kas pārmaksājuši - klusē.     "
+    },
+    {
+        "id": 52,
+        "tēma": "dzimšanas diena",
+        "autors": "Valentīna Viktorija Upesjure",
+        "nosaukums": "",
+        "teksts": "Vissirsnīgākie sveicieni<br>Pie tevis aizlido<br>Taureņu dejas dejojot...<br>Vēja spārni pildīti<br>Ar naktsvijoļu<br>Reibinošo smaržu...<br>Vissirsnīgākie sveicieni<br>Nāk no jūras viļņiem<br>Kas caur gliemežvākiem<br>Tavām ausīm tīkamu<br>Melodiju dzied<br>Sveiciens ienāk istabā<br>Ar kafijas rūgteno smaržu<br>Un tortes balto glazūru<br>Ar veiksmīgu vēlējumu<br>Un klēpi visskaistāko ziedu<br>Ar siltajiem vējiem<br>Kas smaržo pēc medus<br>Vīgriezēm un matiolām...<br>Sveiciens,kas līdzinās<br>Kaiju spārnu vēdām<br>Un tu dzīvotu bez bēdām"
+    },
+    {
+        "id": 53,
+        "tēma": "mīlestība",
+        "autors": "Valdis Atāls",
+        "nosaukums": "",
+        "teksts": "Mīlestībā vārdu nav.<br>Viss ko mēs runājam, ir tikai satraukums."
+    },
+    {
+        "id": 49,
+        "tēma": "mīlestība",
+        "autors": "Valdis Atāls",
+        "nosaukums": "",
+        "teksts": "Mīlestībā vārdu nav.<br>Viss ko mēs runājam, ir tikai satraukums."
+    },
+    {
+        "id": 49,
+        "tēma": "mīlestība",
+        "autors": "Valdis Atāls",
+        "nosaukums": "",
+        "teksts": "Mīlestībā vārdu nav.<br>Viss ko mēs runājam, ir tikai satraukums."
     }
 ]

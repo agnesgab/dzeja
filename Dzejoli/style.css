@@ -4,74 +4,201 @@
   padding: 0;
 }
 
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: #f4f9f9;
+}
+
 header {
   margin: 10px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-family: "Cabin", sans-serif;
+  font-style: italic;
+  color: #f1d1d0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 5px;
+  color: #132c33;
+}
+
+p {
+  font-size: 1.2rem;
 }
 
 .poem-wrapper {
-  border: 2px solid greenyellow;
-  width: 60vw;
-  min-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 10px 50px;
   padding: 10px;
 }
 
-.search-form-div {
-  border: 2px solid rgb(255, 102, 0);
-  margin: 20px;
+.search-wrapper {
+  border-radius: 15px;
+  background-color: #fbaccc;
+  flex-wrap: wrap;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: fit-content;
 }
 
-form {
+.search-cards-div {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 20px;
-}
-
-button {
   margin: 10px;
 }
 
-.test {
-  color: lightgray;
+.search-cards-div .theme-card {
+  border-radius: 15px;
+  text-align: center;
+  height: fit-content;
+  min-width: 100px;
+  border: 1px solid black;
+  background-color: rgb(255, 255, 255);
+  margin: 10px;
+  padding: 5px;
+  cursor: pointer;
 }
 
-.results-container {
-  border: 2px solid rgb(101, 111, 245);
+.theme-card:hover {
+  background-color: lightgray;
+}
+
+.clicked {
+  font-weight: bold;
+  /* nevaru uzlikt background-color */
+}
+
+.results-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: fit-content;
+  margin: 20px;
 }
 
-.poem-card {
-  border: 2px solid red;
+.results-wrapper .poem-card {
+  flex-basis: content;
+  border-left: 5px solid #f875aa;
+  height: fit-content;
+  max-width: 50vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 30vw;
-  margin: 10px;
+
+  margin: 20px;
   padding: 5px;
 }
 
-.name {
-  border: 2px solid yellow;
+.poem-card .author {
+  font-style: italic;
+  margin-top: 5px;
 }
 
-.poem {
-  border: 2px solid rgba(255, 255, 0, 0.568);
+.heart-btn {
+  font-size: 1rem;
+  color: #f875aa;
+  padding: 5px;
+  margin: 10px;
+  align-self: flex-start;
 }
 
 .hidden {
   visibility: hidden;
+}
+
+.saved-text {
+  position: fixed;
+  top: 40vh;
+  right: 5vw;
+  width: 200px;
+  min-height: 100px;
+  border: 2px solid blue;
+}
+
+@media screen and (max-width: 800px) {
+  .poem-wrapper {
+    margin: 10px 30px;
+  }
+  .search-cards-div .theme-card {
+    margin: 2px;
+    max-width: 70vw;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .search-cards-div .theme-card {
+    margin: 2px;
+    max-width: 80vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    margin: 2px;
+  }
+  .poem-wrapper {
+    margin: 5px 0;
+    padding: 0;
+  }
+
+  .search-cards-div {
+    flex-direction: column;
+  }
+
+  .search-cards-div .theme-card {
+    margin: 2px;
+    max-width: 90vw;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }
