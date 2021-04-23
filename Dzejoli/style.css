@@ -86,28 +86,33 @@ p {
 
 .clicked {
   font-weight: bold;
-  /* nevaru uzlikt background-color */
 }
 
 .results-wrapper {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: min-content;
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: fit-content;
+  width: fit-content; */
   margin: 20px;
 }
 
 .results-wrapper .poem-card {
-  flex-basis: content;
-  border-left: 5px solid #f875aa;
+  border: 3px double #f875aa;
+  justify-self: stretch;
+
+  /* flex-basis: content;
   height: fit-content;
   max-width: 50vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
 
-  margin: 20px;
+  margin: 20px 10px;
   padding: 5px;
 }
 
@@ -128,13 +133,61 @@ p {
   visibility: hidden;
 }
 
-.saved-text {
+.saved-container {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 40vh;
   right: 5vw;
   width: 200px;
-  min-height: 100px;
+  height: 300px;
+  overflow-y: auto;
   border: 2px solid blue;
+  padding: 5px;
+  margin: 20px;
+  font-size: 0.8rem;
+}
+
+.saved-poem-div {
+  margin: 2px;
+  padding: 2px;
+}
+
+.saved-poem-div:nth-child(odd) {
+  background-color: rgb(248, 119, 171, 0.3);
+}
+.saved-poem-div:nth-child(even) {
+  background-color: rgb(248, 119, 171, 0.2);
+}
+
+#remove-btn {
+  float: right;
+}
+
+#open-btn {
+  align-self: flex-end;
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.test {
+  padding: 5px;
+  margin: 20px;
+  border: 1px solid black;
+}
+
+.new {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: min-content;
+}
+
+.new-results {
+  border: 3px double #f875aa;
+  background: white;
+  margin: 20px 10px;
+  padding: 5px;
+  min-height: 100px;
 }
 
 @media screen and (max-width: 800px) {
