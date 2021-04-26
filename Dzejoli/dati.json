@@ -371,17 +371,773 @@
         "teksts": "Mīlestībā vārdu nav.<br>Viss ko mēs runājam, ir tikai satraukums."
     },
     {
-        "id": 49,
+        "id": 54,
         "tēma": "mīlestība",
         "autors": "Valdis Atāls",
         "nosaukums": "",
         "teksts": "Mīlestībā vārdu nav.<br>Viss ko mēs runājam, ir tikai satraukums."
     },
     {
-        "id": 49,
+        "id": 55,
         "tēma": "mīlestība",
         "autors": "Valdis Atāls",
         "nosaukums": "",
         "teksts": "Mīlestībā vārdu nav.<br>Viss ko mēs runājam, ir tikai satraukums."
+    },
+    {
+        "id": 56,
+        "tēma": "vārda diena",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Drīz auļos vējš caur kailo noru smilgām,<br>Bet, kamēr asteres un gladiolas kvēl,<br>Tās klēpjiem nesam vārda dienā Ilgām,<br>Lai mazāk aizejošās  vasaras ir žēl.<br>"
+    },
+    {
+        "id": 57,
+        "tēma": "vārda diena",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Kad stārķi aiznes vasaru<br>Un pīlādzis kļūst sārts,<br>Tad kalendārā ierakstīts<br>Ir ļoti zīmīgs vārds."
+    },
+    {
+        "id": 58,
+        "tēma": "vārda diena",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Paši maigākie vēji,<br>Paši siltākie saules stari,<br>Vismīļākie vārdi,<br>Viskrāšņākie ziedi,<br>Lai tas viss šodien tikai tev."
+    },
+    {
+        "id": 59,
+        "tēma": "vārda diena",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Lai uz tava vaiga sārtā uzkrīt mūsu buča lielā!"
+    },
+    {
+        "id": 60,
+        "tēma": "vārda diena",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Skaistāk vēl par lakstīgalām zīlītes tev kokos dzied.<br>Apsveikumus vēji dala, leduspuķes logā zied."
+    },
+    {
+        "id": 61,
+        "tēma": "vārda diena",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Šī ir tā diena, kad cilvēks nepaliek ne vecāks, ne kā savādi jaunāks. Tev vienkārši ir vārda diena. Ar to arī sveicam!"
+    },
+    {
+        "id": 62,
+        "tēma": "vārda diena",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Visskaistākie ziedi, vislabākie novēlējumi, prieka pilni pārsteigumi tikai tev tavā vārda dienā!"
+    },
+    {
+        "id": 63,
+        "tēma": "vārda diena",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Lai tik daudz laba, cik to gribas prātam. Lai tik daudz skaista, cik to vēlas sirds!"
+    },
+    {
+        "id": 64,
+        "tēma": "vārda diena, mīlestība",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Lai modina rīts tevi ļoti mīļi<br>Un noliek uz gultas saules šķīvi<br>Kas smaržo pēc sapņa un iedomu vīna<br>Un arī pēc mīlas vitamīna."
+    },
+    {
+        "id": 65,
+        "tēma": "vārda diena",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Lapu un asteru putenī,<br>Gājputnu atvadu klaigās<br>Atkal tavs vārds ar rudeni<br>Rokrokā mīļi staigā."
+    },
+    {
+        "id": 66,
+        "tēma": "vārda diena",
+        "autors": "Kornēlija Apškrūma",
+        "nosaukums": "",
+        "teksts": "Lai gaisma vienmēr tavās acīs<br>Kā skatiens mīļš, ko citiem pasniegt vari<br>Lai sirdī allaž puķu maigums lās<br>Un vizbulīšu dāvāts pavasaris."
+    },
+    {
+        "id": 67,
+        "tēma": "vārda diena",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Ar sniega pārslām ziemas rīts<br>Tev baltu ceļu noklāj<br>Un, tavu vārdu sveicinot,<br>Ar sniega piku pamāj."
+    },
+    {
+        "id": 68,
+        "tēma": "vārda diena",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Tavs vārds ir kā saulespuķe,<br>Kā ābols zarā, kas mirdz,<br>Tavs vārds ir kā astere koša<br>Pie rudens vējainās sirds!"
+    },
+    {
+        "id": 69,
+        "tēma": "kāzas",
+        "autors": "Biruta Žurovska",
+        "nosaukums": "",
+        "teksts": "Meklēju Tevi<br>Starp pumpuriem,<br>kuri pa vienam vērās<br>Meklēju ziedu<br>plaukuma ,bites pie tiem<br>kad tvērās.<br>Nevaru pateikt,<br>kāpēc gan tā<br>pūliņi veltīgi bija.<br>Vienatnē klejojot,<br>skumjas vien<br>biezi pār mani lija.<br>Beidzot starp košajām asterēm,<br>mīļi man pretī māji.<br>Kur biji agrāk<br>un kāpēc gan,<br>sevi man neatklāji?<br>Toties nu labi<br>man rudenī,<br>nebaidos ziemu gaidīt.<br>Jūtu-tā bija jānotiek,<br>abiem nu mīļumā smaidīt"
+    },
+    {
+        "id": 70,
+        "tēma": "kāzas",
+        "autors": "Māra Svīre",
+        "nosaukums": "",
+        "teksts": "Mīlestība nav ar zīmuli uzvilkts vārds, kuru viegli izdzēst, lai vietā rakstītu jaunu. Īsta mīlestība ir akmenī iecirsta."
+    },
+    {
+        "id": 71,
+        "tēma": "kāzas",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Tu esi krasts, kurš gaida,<br>Kurš pretī liek laipas ar smaidu.<br>Un kā ceļazvaigzne sola,<br>Ka vienmēr pie tevis<br> Sirdsmiers un spārni būs!"
+    },
+    {
+        "id": 72,
+        "tēma": "kāzas",
+        "autors": "Kornēlija Apškrūma",
+        "nosaukums": "",
+        "teksts": "Vienmēr un visur –<br>Lietū, saulē un sniegā,<br>Laikā un liktenī.<br>Kas jūs uz delnas tur,<br>Pagurumā,<br>Bēdu tumsā un priekā –<br>Esiet viens otram<br>Pavards un ugunskurs."
+    },
+    {
+        "id": 73,
+        "tēma": "kāzas",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Varbūt, es nezinu, kas ar mani notiks nākotnē, bet es zinu, kā es gribu dzīvot. Es gribu dzīvot, turoties pie tās rokas, kas mani mīl."
+    },
+    {
+        "id": 74,
+        "tēma": "kāzas",
+        "autors": "Džebrans",
+        "nosaukums": "",
+        "teksts": "Un dāvāt – neko negaidot pretī.<br>Mācēt atvadīties no tevis – nebaidoties tevi uz visiem laikiem pazaudēt.<br>Runāt ar tevi par savām jūtām – neuzliekot tev atbildību par tām.<br>Dalīties ar tevi zināšanās – nepamācot tevi.<br>Priecāties par tevi – tādu kāds tu esi.<br>Ja arī tu, juzdams to pašu, spersi soli pretī – mēs spēsim  viens otru bagātināt."
+    },
+    {
+        "id": 75,
+        "tēma": "kāzas",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Sievietē ir jāredz topošā sieva, ja tā nav, tad nevajag turēt pie sevis cita laimi!"
+    },
+    {
+        "id": 76,
+        "tēma": "kāzas, sieviete",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Dārgais, ja Tu ar gadiem vairs neievēro savas sievietes skaistumu, tad atceries, ka citiem vīriešiem ar redzi viss ir kārtībā!"
+    },
+    {
+        "id": 77,
+        "tēma": "kāzas",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Laime sastāv no četrām lietām: labiem vecākiem, uzticamiem draugiem, mīļotā cilvēka un veseliem bērniem."
+    },
+    {
+        "id": 78,
+        "tēma": "sieviete",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Ne vienmēr cilvēks, kas ir izaudzinājis bērnu, uzcēlis māju un iestādījis koku, ir īsts vīrietis. Dažreiz tā ir vienkārši- sieviete."
+    },
+    {
+        "id": 79,
+        "tēma": "kāzas, mīlestība ",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Gribi nodzīvot ilgu un laimīgu ģimenes dzīvi, iemācies piedot, saprast, noklusēt, runāt patiesību un vienkārši mīlēt!"
+    },
+    {
+        "id": 80,
+        "tēma": "kāzas",
+        "autors": "Knuts Skujenieks",
+        "nosaukums": "",
+        "teksts": "es tev atdošu savu spēku<br>savu miegu un bezmiegu došu<br>lai tikai tu redzētu logā<br>mēnesi nesāpošu<br>lai tikai tu justu ka tevī<br>maigums kā upe kūpēs<br>lai apaugtu zaļiem zariem<br>tās rūpes ko nenorūpēs"
+    },
+    {
+        "id": 81,
+        "tēma": "kāzas",
+        "autors": "Imants Ziedonis",
+        "nosaukums": "",
+        "teksts": "Parādi man to robežu, kur beidzas viens cilvēks un kur sākas otrs! Tā fotogrāfiskā līnija – drēbes, cepure un kurpes – vai tā ir viņa robeža? Vai cilvēks beidzas savu pirkstu galos? Parādi man tās neredzamās robežas, kuras, viens otru sajuzdami, pāriet vīrieši un sievietes. Ne kāds ko teica, ne kāds ko dzirdēja, ne smarža ieviļņojās, ne pirkstiņš nepieskārās. Tad ar ko viņi aizskāra viens otru?"
+    },
+    {
+        "id": 82,
+        "tēma": "kāzas",
+        "autors": "Jānis Ziemeļnieks",
+        "nosaukums": "",
+        "teksts": "No diviem sapņiem,<br>No divām ilgām<br>Viens daiļums mīla<br>Zied mūžībai."
+    },
+    {
+        "id": 83,
+        "tēma": "kāzas",
+        "autors": "Maija Laukmane",
+        "nosaukums": "",
+        "teksts": "“še mana roka –<br>esmu blakus ne tikai tādēļ<br>lai kāptu kalnā<br>bet dziļumos arī<br><br>še mana roka<br>ja iespēj par nieka sprīdi<br>tev gaitu<br>drošāku darīt<br><br>še mana roka –<br>esmu blakus ne tikai tādēļ<br>lai lidotu priekā<br>bet tad kad ir grūti"
+    },
+    {
+        "id": 84,
+        "tēma": "kāzas",
+        "autors": "Anda Līce",
+        "nosaukums": "",
+        "teksts": "Mīlestība – lielā pieskaršanās.<br>Kā saule pūpolam,<br>Kā ziedputeksnis drīksnai.<br>Ir mīlestība visu notikšanu sākums."
+    },
+    {
+        "id": 85,
+        "tēma": "kāzas, sieviete",
+        "autors": "B. Heizs",
+        "nosaukums": "",
+        "teksts": "Aiz katra panākumus guvuša vīrieša stāv lepna sieva un izbrīnīta sievasmāte."
+    },
+    {
+        "id": 86,
+        "tēma": "kāzas",
+        "autors": " Ieva Trimalniece",
+        "nosaukums": "",
+        "teksts": "Tas ir tik daudz – būt elpai otra krūtīs, būt gaismai otra acīs, būt otram par cerību dzīves ceļos tik daudzos un tālos. Tas ir tik daudz – ziedēt otra priekam. Un medus lāsei uz lūpām būt."
+    },
+    {
+        "id": 87,
+        "tēma": "kāzas",
+        "autors": "Jānis Peters",
+        "nosaukums": "",
+        "teksts": "Es Tevi mīlu. Viss ir bijis jau -<br> šis roku mulsums, divas elpas blakus,<br>bet dzirdējusi pasaule vēl nav,<br>kā tieši tev un tieši es to saku."
+    },
+    {
+        "id": 88,
+        "tēma": "kāzas",
+        "autors": "Z. Purvs",
+        "nosaukums": "",
+        "teksts": "Plauksta gulst plaukstā -<br> mana tavā<br>un tava manā,<br>un tā - tā ir paļaušanās,<br>vēl neapzinoties - kam,<br>bet - šim brīdim,<br>šim brīnumam."
+    },
+    {
+        "id": 89,
+        "tēma": "kāzas",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Es Tevi meklēju, kam visi vārdi lieki,<br>Vien acīs dvēsele kā puķē rasa mirdz.<br>Tie īsti saprotas, kas klusēdami tiekas,<br>Kam lūpas nerunā, bet runā sirds."
+    },
+    {
+        "id": 90,
+        "tēma": "kāzas",
+        "autors": "Mārtiņš Freimanis",
+        "nosaukums": "",
+        "teksts": "Visvieglāk ir iegūt. Visgrūtāk – iemācīties piederēt."
+    },
+    {
+        "id": 91,
+        "tēma": "mīlestība",
+        "autors": "Mārtiņš Freimanis",
+        "nosaukums": "",
+        "teksts": "Es gribēju būt centra uzbrucējs tavā futbolā, bet tā arī paliku uz rezervistu soliņa ar salauztu degunu."
+    },
+    {
+        "id": 92,
+        "tēma": "kāzas, mīlestība",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Mīlestība ir īsta tikai tad, ja vēlies, lai otrs ir laimīgs. Pat tad, ja pats nesi daļa no viņa laimes!"
+    },
+    {
+        "id": 93,
+        "tēma": "kāzas",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Lai atnāk ..., lai krāsni kāds iekur,<br>Ar priecīgu dzirksteļu sietu,<br>Lai atnāk ..., lai apsēžas blakām<br>Un aizved pa pasaku takām<br>Un palīdz būt stiprai un lielai,<br>Kad jāpāriet pāri tai ielai,<br>Ko saucam par dzīvi ..."
+    },
+    {
+        "id": 94,
+        "tēma": "kāzas",
+        "autors": "Teodors Korners",
+        "nosaukums": "",
+        "teksts": "Mīlestībai nav laika mēra.<br>Tā dīgst un zied<br>Un nogatavojas vienlaicīgi -<br>Vienā skaistā stundā."
+    },
+    {
+        "id": 95,
+        "tēma": "kāzas",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Paši grūtākie ir 50 gadi pēc laulības. Pēc tam nāk palīgā  skleroze…"
+    },
+    {
+        "id": 96,
+        "tēma": "kāzas",
+        "autors": "Z. Marlejs",
+        "nosaukums": "",
+        "teksts": "Tu vari sūdzēties par to, ka rozēm ir ērkšķi, vai arī vari priecāties par to, ka ērkšķiem ir rozes!"
+    },
+    {
+        "id": 97,
+        "tēma": "kāzas, mīlestība",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Mīlestība ir griba! Griba darīt kādu laimīgu un būt laimīgam pašam. Tā ir griba būt līdzās otram. Attiecībās nav taisnības. Jo, ja meklē taisnību, tad patiesībā meklē uzvarētāju un zaudētāju, un tad tā vairs nav kopīga cīņa divatā, bet gan sacensība. Un Tu esi izvēlējies sacensties nevis iet kopā."
+    },
+    {
+        "id": 98,
+        "tēma": "kāzas",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Laime ir tad, kad tu esi pateicīgs par visu, kas tev ir.... Kad svešu nevajag, un kā ir citiem - neinteresē... Kad ir silti un mājīgi un ir cilvēks, kuram no sirds pateikt „ilgojos“ un „mīlu“."
+    },
+    {
+        "id": 99,
+        "tēma": "kāzas, mīlestība",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Pazaudējam tos, kuri mums sūtīti pieredzei. Paliek tie, kurus atsūtījis liktenis."
+    },
+    {
+        "id": 100,
+        "tēma": "kāzas",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Tas ,kuru tu gribēsi redzēt, dzirdēt un just pēc simts noguruma gadiem, tas arī t tavs liktenis. Es jau sen vairs neticu... skaļiem vārdiem, krāšņiem ziedu klēpjiem un visam, kas tiek darīts publiski, lai izrādītos. Es ticu divu cilvēku klusuma zvērestam, būt kopā vienam ar otru pat tumšajos laikos. Un man vienmēr būs dārga tā roka, kura sildīja manas plaukstas tad, kad man nebija spēka atbildēt ar to pašu!"
+    },
+    {
+        "id": 101,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Putns, kas sēž uz zara, nekad nebaidās no tā, ka zars nolūzīs. Viņš neuzticas zaram, viņš uzticas saviem spārniem. Vienmēr tici sev!"
+    },
+    {
+        "id": 102,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Ja tev ir mērķis- ej uz to! Nevari paiet – rāpo! Nevari parāpot – apgulies un guli mērķa virzienā!"
+    },
+    {
+        "id": 103,
+        "tēma": "ceļavārdi",
+        "autors": "Ieva Trimalniece",
+        "nosaukums": "",
+        "teksts": "Paliec, kas esi šai pasaulē –<br> zieda pumpurs vai tauriņš zelta spārniem.<br>Esi, kas esi – mūzikas nots vai rīta migla,<br>nakts zvaigzne vai priedes dzintars.<br>Glabā savu būtību –<br>to vienīgo dārgumu, kas cilvēkam pieder<br>no laika gala –<br>Sniegbalts sniegs vai gulbju klaigas ezerā,<br>brīvs stepes vējš vai jūrmalas smilts.<br>Esi.."
+    },
+    {
+        "id": 104,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Visām meitenēm, kuras gaida princi baltā zirgā, PAZIŅOJU- zirgs nomira, eju ar kājām, tāpēc kavējos."
+    },
+    {
+        "id": 105,
+        "tēma": "ceļavārdi",
+        "autors": "Dž. A. Šeds",
+        "nosaukums": "",
+        "teksts": "Ostā kuģis ir drošībā – bet, kuģus būvē ne jau tāpēc, lai tie stāvētu uz vietas."
+    },
+    {
+        "id": 106,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Bērnības putns zemu lido un viņa sirsniņa vienmēr ir pieneņu pļavā, zāles stiebrā un pasakā ar laimīgām beigām… Bet, nelido tik zemu! Lai paceļ tevi tētis augstāk uz mākoņa un mamma virs smaržojoša ziediņa, lai redzētu, cik pasaule ir skaista!"
+    },
+    {
+        "id": 107,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Ej roku rokā ar brīnumu; paturi prātā domu par veiksmi un katra diena uzziedēs!"
+    },
+    {
+        "id": 108,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Einšteina prātu, Napoleona ambīcijas, Šopēna emocijas!"
+    },
+    {
+        "id": 109,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Lai skan pasaules elpa ausīs un smilgu dziesma dvēselē!"
+    },
+    {
+        "id": 110,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Lielos mērķos vieglāk trāpīt!"
+    },
+    {
+        "id": 111,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Vienalga, vai ārā rudens vai ziema, studentiem vienmēr galvā ir jūnijs, dvēselē jūlijs un augusts visās pārējās vietās!"
+    },
+    {
+        "id": 101,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": ""
+    },
+    {
+        "id": 112,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Mērķi, ko sasniegt!<br>Spēku, lai izturētu!<br>Prātu, lai uzvarētu!<br>Izturību, lai nepadotos!<br>Veiksmi, kas palīdz!<br>Idejas, kas virza!<br>Prieku par paveikto!"
+    },
+    {
+        "id": 113,
+        "tēma": "ceļavārdi",
+        "autors": "Imants Ziedonis",
+        "nosaukums": "",
+        "teksts": "Maize ir kā pasaule-apakšā zemes garoza, pāri – debesu garoza, pa vidu- mīkstums- dzīve. Kad dzīve pareizi iejaukta – garoza atlec."
+    },
+    {
+        "id": 114,
+        "tēma": "ceļavārdi",
+        "autors": "Zenta Mauriņa",
+        "nosaukums": "",
+        "teksts": "Mums tik daudz pieder, cik mēs paši ar savām rokām varam nopelnīt; paši ar savu garu uzcelt; paši ar savu prātu izgudrot."
+    },
+    {
+        "id": 115,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Mīliet savus tuvākos cilvēkus, saprotot, ka nekas nav tik svarīgs kā ģimene vienā lielā, siltā lokā ap jums!"
+    },
+    {
+        "id": 116,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Dziedi, māmiņ „Aijā žūžū”<br>Visu mūžu tavs es būšu.<br>Lāča bērns, kam ogas lasīs<br>Lāča bērns, kas medu prasīs."
+    },
+    {
+        "id": 117,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Ir divas pasaules-<br>Lielā un katram Savējā…<br>Un lai kas arī notiktu tai Lielajā,<br>Galvenais, lai Savējā tu justos laimīgs!"
+    },
+    {
+        "id": 118,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Tas ceļš, kur manas kājas bija vakar – tas jau ir cits. Un rīt tas būs cits. Ne tas, kurā šodien stāvu. Griezties atpakaļ? Nav iespējams! Tālāk nedoties? Stāvēt uz vietas? Nav iespējams. Un tāpēc dodos SAVĀ CEĻĀ ARVIEN – ik sprīdi, ik metra nogriezni, ik Gaismas sekundi un stundu. EJU. VIENKĀRŠI EJU. Šodien TAM IR PIENĀCIS LAIKS"
+    },
+    {
+        "id": 119,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Pats labākais dzīves skolotājs – pieredze. Ņem, protams, dārgi, bet paskaidro saprotami."
+    },
+    {
+        "id": 120,
+        "tēma": "ceļavārdi",
+        "autors": "Māra Zālīte",
+        "nosaukums": "",
+        "teksts": "Viss pārāk reizē zied<br>šai pavasarī<br>un mana skaistā jaunība -<br>tā arī."
+    },
+    {
+        "id": 121,
+        "tēma": "ceļavārdi",
+        "autors": "Stīvs Džobss",
+        "nosaukums": "",
+        "teksts": "Tavs laiks ir ierobežots, netērē to, dzīvojot kāda cita dzīvi. Neesi iesprostots dogmās, kas ir citu cilvēku domu rezultāta izdzīvošana. Neļauj apkārtējo viedokļu skaņai pazudināt savu iekšējo balsi. Un pats svarīgākais - saglabā drosmi sekot sirdij un intuīcijai, jo tās kaut kā zina, par ko tu patiesi vēlies kļūt. Viss pārējais ir sekundārs."
+    },
+    {
+        "id": 122,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Ja dzīve nogāž gar zemi, apvelies uz muguras, un tu redzēsi, cik skaistas ir zvaigznes!"
+    },
+    {
+        "id": 123,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Ja laime vēl nav atnākusi, tātad tā ir milzīga un nāk maziem solīšiem."
+    },
+    {
+        "id": 124,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Lai tik daudz laba, cik to gribas prātam,<br>Lai tik daudz skaista, cik to vēlas sirds.<br>Nav svarīgi būt puķei, svarīgi ir ziedēt,<br>Nav svarīgi būt zvaigznei, svarīgi ir starot"
+    },
+    {
+        "id": 125,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Tas nav iespējams… teica Iemesls<br>Tas ir neprāts… bilda Pieredze<br>Tas ir neiespējami… iesaucās Lepnums<br>Pamēģini… nočukstēja Sapnis."
+    },
+    {
+        "id": 126,
+        "tēma": "ceļavārdi",
+        "autors": "Vinnijs Pūks",
+        "nosaukums": "Vinnija Pūka viedums, radošums un dzīves gudrība.",
+        "teksts": "Ir kaut kas, kas tev vienmēr jāatceras. Tu esi Drosmīgāks nekā tev liekas, Stiprāks nekā tev šķiet un Gudrāks nekā tu domā. Bet vissvarīgākā lieta-pat, ja mēs neesam blakus… es vienmēr būšu ar tevi."
+    },
+    {
+        "id": 127,
+        "tēma": "ceļavārdi",
+        "autors": "Māra Zālīte",
+        "nosaukums": "",
+        "teksts": "Tu tikai ziedi. Nedomā neko, jo tevī gaisma tagad gaiši domās.<br>Tu tikai ziedi. Vairāk it neko. Un aizmirsti tās savas tukšās lomas.<br>Tu tikai ziedi. Nedomā neko, jo gaisma pati visu, visu zina.<br>Tu ziedi, uzticies, tik ļauj, tu tikai ziedi. Vairāk it neko."
+    },
+    {
+        "id": 128,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Mēs uztraucamies par to, kas mūsu bērni būs rīt, un aizmirstam, ka viņi kaut kas ir jau šodien."
+    },
+    {
+        "id": 129,
+        "tēma": "ceļavārdi",
+        "autors": "Edgars Untāls",
+        "nosaukums": "",
+        "teksts": "Lai tiktu uz priekšu – sāc darīt. Lai sāktu darīt – notici sev. Lai noticētu sev – atgriezies pie saknēm. Pie fundamentālām vērtībām un uzņemies atbildību par visu, kas notiek un nenotiek ar tavu dzīvi. Un vēl – nekas no tā, ko ir vērts darīt, nenotiek viegli, ātri un vienkārši. Līdz pienāk brīdis, kad notiek. Un tu smaidi. Tas nekas, ka mute melna."
+    },
+    {
+        "id": 130,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Kas ir labāk – būt par raibu taureni, un redzēt pasauli pelēku, vai būt pelēkam akmenim, un redzēt pasauli krāsās?"
+    },
+    {
+        "id": 131,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Pasaule ir pilna dāvanu mums visiem, ja vien mums ir acis, lai to ieraudzītu; sirds, lai to iemīlētu un rokas –lai to saņemtu."
+    },
+    {
+        "id": 132,
+        "tēma": "ceļavārdi",
+        "autors": "Džo Žirārs",
+        "nosaukums": "",
+        "teksts": "Lifts uz panākumiem nestrādā. Izmantojiet kāpnes. Soli pa solim."
+    },
+    {
+        "id": 133,
+        "tēma": "ceļavārdi",
+        "autors": "Renārs Kaupers",
+        "nosaukums": "",
+        "teksts": "Manī šobrīd sadzīvo uzreiz divi. Tāds labi paēdis runčuks, kurš uzaudzējis sev puncīti un murrā piesaulītē – ai, ko tur, viss ir labi. Un velosipēdists, kurš zina: visas impērijas sabruka, jo sāka pārlieku labi dzīvot. Jāturas, jāmin pedāļi. Jāsaglabā draivs."
+    },
+    {
+        "id": 134,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Ja pasaulē ir vispār laime,<br>lai tu to satiec!<br>Ja pasaulē ir daudz smieklu, mīlas un ziedu,<br>lai tie ir tev!<br>Ja pasaulē ir nepārvaramais, lai tu tam tiec pāri!"
+    },
+    {
+        "id": 135,
+        "tēma": "ceļavārdi, vīrietis",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Būt puikam – runa par dzimumu. Būt vīrietim – runa par briedumu. Būt džentlmenim – runa par izvēli."
+    },
+    {
+        "id": 136,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Mēs vēl esam jauni<br>Pavisam zaļi gurķīši.<br>Mums priekšā marināde…<br>pirmais sāls un pirmais pipars"
+    },
+    {
+        "id": 137,
+        "tēma": "ceļavārdi, sieviete",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Meita - tēta laime, mammas lepnums, tēta nauda, mammas nervi."
+    },
+    {
+        "id": 138,
+        "tēma": "ceļavārdi",
+        "autors": "D. Ceple",
+        "nosaukums": "",
+        "teksts": "Šī pasaule ir brīnišķīgi radīta – jebkurš zaudējums, jebkurš citrons, ko piespēlē dzīve, var tapt izspiests limonādē."
+    },
+    {
+        "id": 139,
+        "tēma": "ceļavārdi",
+        "autors": "Māra Zālīte",
+        "nosaukums": "",
+        "teksts": "Slaidākie koki izaug no dziļākajām gravām. Jo tiem stiprāk jātiecas pēc gaismas nekā tiem, kas no kalna auguši."
+    },
+    {
+        "id": 140,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "āatmet cerība, ka jūra jebkad pilnībā norimsies- un jāmācās burāt stiprā vējā."
+    },
+    {
+        "id": 141,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Dzīve ir kā sava veida ballīte. Tu uz to ielūdz daudz cilvēku, no kuriem daži to pamet agri, daži paliek visu nakti, daži smejas ar tevi, daži smejas par tevi, un citi ierodas ballītē ļoti vēlu. Beigās, kad jautrība beigusies, tikai daži palikuši ar tevi, lai palīdzētu savākt nekārtību un visbiežāk tie ir cilvēki, kas paši šo nekārtību nemaz nav radījuši. Tie ir cilvēki, kas ir tavi patiesi draugi."
+    },
+    {
+        "id": 142,
+        "tēma": "ceļavārdi",
+        "autors": "Rainers Hāks",
+        "nosaukums": "",
+        "teksts": "Laimes sarakstā ir katrs, un laime ierauga visus. Tam ticēt ir vērts."
+    },
+    {
+        "id": 143,
+        "tēma": "ceļavārdi",
+        "autors": "Ričards Bahs",
+        "nosaukums": "",
+        "teksts": "Tu vari nokāpt tikai no tām smailēm, kurās esi uzkāpis.<br>Bet, ja izpletīsi spārnus, tu aizlidosi tālāk."
+    },
+    {
+        "id": 144,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Kad mammai vaicāja: „Kuru bērnu tu mīli VAIRĀK par visiem”, viņa atbildēja:<br>„Jaunāko- kamēr neizaugs,<br>saslimušo- kamēr neizveseļosies,<br>Izgājušo no mājām- kamēr neatgriezīsies<br>un katru - kamēr vien DZĪVOŠU”"
+    },
+    {
+        "id": 145,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Kad es reizēm žēlojos saviem vecākiem par savām nepatikšanām vai neveiksmēm, viņi vienmēr teica: „Mēs nezinām visas detaļas un sīkumus, bet varam tev palīdzēt ar...Durvīm.” Izdzirdot šo frāzi pirmo reiz, jutos apmulsis, bet mamma man paskaidroja šo Durvju nozīmi. „Tavā dzīvē, var atgadīties gan labas lietas, gan sliktas, bet nevar atgadīties tikai viens - tas, ka es tev neatvēršu Durvis! Jebkurā brīdī, kad tu jutīsies piekusis, noguris, negribēsi kaut ko turpināt, izlemsi sarīkot revolūciju, pazaudēsi, vilsies, saslimsi; neskatoties uz to, vai tev būs taisnība, vai nebūs; kad tu vairs nezināsi, ko darīt un uz kurieni iet - nāc mājās pie mums. Mēs neapsolām neuzdot jautājumus, bet mēs apsolām mīkstu gultu, garšīgu ēdienu miesai un dvēselei labu grāmatu blakus un visu, visu, visu, kas ir mūsu spēkos kā vecākiem. Laime - tas ir vienkārši zināt, ka ir kāds, kurš tev palīdzēs...ar Durvīm!!!"
+    },
+    {
+        "id": 146,
+        "tēma": "ceļavārdi",
+        "autors": "Ričards Bahs",
+        "nosaukums": "",
+        "teksts": "Tu esi meistars tajā dzīvē, ko esi nodzīvojis; prasmīgs strādnieks tajā dzīvē, ko dzīvo pašlaik, bet amatieris tajā dzīvē, ko vēl piedzīvosi."
+    },
+    {
+        "id": 147,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Tu esi brīnums -<br>Tevī pašā zied puteņu lauki,<br>Tevī rudens lapas dejo valsi,<br>Tevī balta pasaule dzīvo.<br>Apstājies, paklausies un dzīvo.<br>"
+    },
+    {
+        "id": 148,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Droši atver durvis kaut vai katrai svešai domai! Laid to iekšā, iepazīstini ar pārējām. Lai staigā, kur pašai tīk; lai sagriež karuseli, uzvanda dūņas, ja tai ir tāds spēks! Ja pēc tam, kad viss aprimsies, tā nespēs atrast savu vietu - pati aizies. Bet tu paliksi. Viedāks."
+    },
+    {
+        "id": 149,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Priecājies par dzīvi, izbaudi to -<br>Uzvari un kļūdies, mīli un nīsti, iegūsti un zaudē!<br>Tas ir tavs laiks, kad tu to vari,<br>Un tāpēc-uz priekšu- dari!"
+    },
+    {
+        "id": 150,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Miglas aizkars ved nezināmajā, un minēt nākas ne tikai ceļa zīmes, bet arī gala punktus. Lai nepazūd īstie orientieri un sirds vienmēr aizved pie mīļajiem!"
+    },
+    {
+        "id": 151,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Ja tavs dzīves ceļa virziens norādīts uz asfalta ar krītu, ko iesāksi, kad uzkritīs pirmais ziemas sniegs?"
+    },
+    {
+        "id": 152,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Draugi- tie ir eņģeļi, kuri tad, kad tev ir ļoti grūti, palīdz piecelties un atgādina, ka vajag lidot."
+    },
+    {
+        "id": 153,
+        "tēma": "ceļavārdi",
+        "autors": "K. Klāna",
+        "nosaukums": "",
+        "teksts": "Katrs var būt maza saulīte zem lielās saules. Galvenais – cik silta tava spīdēšana, un, vai tā ir no visas tavas varēšanas."
+    },
+    {
+        "id": 154,
+        "tēma": "ceļavārdi",
+        "autors": "Angļu sakāmvārds",
+        "nosaukums": "",
+        "teksts": "Stipras gribas cilvēks un ūdenskritums paši lauž sev ceļu."
+    },
+    {
+        "id": 155,
+        "tēma": "ceļavārdi",
+        "autors": "Menandrs",
+        "nosaukums": "",
+        "teksts": "Lai ar tevi notiek nevis tas, ko tev gribētos, bet gan tas, kas tev nāk par labu."
+    },
+    {
+        "id": 156,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Sargā no nezālēm savu sapņu lauku!"
+    },
+    {
+        "id": 157,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Lai piepildās visi tie sapņi,<br>Kas mīlēti, loloti, kamolā satīti.<br>Kā bērnības krāsainie dūraiņi-<br>Mīļākie, siltākie, vienīgie."
+    },
+    {
+        "id": 158,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Laiks un liktenis- divas lietas, no kurām neizbēgt nekur. Vienam jāļauj ritēt garām, otru jāņem tādu, kāds ir!"
+    },
+    {
+        "id": 159,
+        "tēma": "ceļavārdi",
+        "autors": "Ā.Āre",
+        "nosaukums": "",
+        "teksts": "Nes sirdī vienmēr gaismu,<br>Un sapņos cerību baltu.<br>Nes rītam pretī labestību<br>Un dienas solī mīlestību.<br>Un lai tev nepietrūkst šīs lietas,<br>Dzīves ceļus skrejot."
+    },
+    {
+        "id": 160,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Savāc sauju pie saujas -<br>Kalns pacelsies augstu,<br>Pieliec lāsi pie lāses -<br>Būs jūra plaša.<br>Tāpēc pasaulei vajag tevis paša<br>Un vajag tavu plaukstu."
+    },
+    {
+        "id": 161,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Dzīve ir karuselis. Un karuselī ir tā - tu sēdi iekšā, un, kamēr tas griežas, ārā izlēkt nevari. Vai tev labi, vai nelabi - sēdi un viss!"
+    },
+    {
+        "id": 162,
+        "tēma": "ceļavārdi",
+        "autors": "",
+        "nosaukums": "",
+        "teksts": "Ja tu gaidīsi īsto brīdi, tu nekad neuzsāksi to, ko gribi. Tāpēc sāc tieši tagad; sāc tur, kur tu esi un ar to, kas tev ir!"
     }
 ]

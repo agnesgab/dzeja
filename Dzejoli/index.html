@@ -1,259 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sass_style.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4c14822e5a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Dzejoļu meklētājs</title>
+  </head>
 
-  <script src="https://kit.fontawesome.com/4c14822e5a.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <title>Dzejoļu meklētājs</title>
-</head>
-
-<body>
-  <header>
-    <h1>Meklētājs</h1>
-  </header>
-  <div class="poem-wrapper">
-    <div class="search-wrapper">
-      <div class="search-cards-div">
-        <div class="theme-card" id="b-day">
-          <p>Dzimšanas diena+</p>
-        </div>
-        <div class="theme-card" id="n-day">
-          <p>Vārda diena+</p>
-        </div>
-        <div class="theme-card" id="grad">
-          <p>Ziemassvētki+</p>
-        </div>
-        <div class="theme-card" id="prose">
-          <p>Sieviete+</p>
-        </div>
-        <div class="theme-card" id="love">
-          <p>Mīlestība+</p>
-        </div>
-        <div class="theme-card" id="n-year">
-          <p>Jaunais gads</p>
-        </div>
-        <div class="theme-card" id="">
-          <p>Vīrietis</p>
-        </div>
-        <div class="theme-card" id="easter">
-          <p>Lieldienas</p>
-        </div>
-        <div class="theme-card" id="">
-          <p>Kaut kas</p>
-        </div>
-        <div class="theme-card" id="">
-          <p>Latvija</p>
-        </div>
-        <div class="theme-card" id="">
-          <p>Bērniem</p>
-        </div>
-        <div class="theme-card" id="">
-          <p>Kāzas</p>
-        </div>
-        <div class="theme-card" id="">
-          <p>Cits</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="results-wrapper" id="results">
-      <div class="poem-card">
-        <h3 class="name"></h3>
-        <p class="poem"></p>
-        <p class="author"></p>
-        <button class="heart-btn"><i class="far fa-heart"> Patīk</i></button>
-      </div>
-    </div>
-
-    <div class="saved-container hidden">
-      <div class="saved-poem-wrapper">
-        <div class="saved-poem-div">
-          <p class="saved-p">teksts teksts</p>
-          <button id="remove-btn"><i class="fas fa-times"></i></button>
-        </div>
-        <div class="saved-poem-div">
-          <p class="saved-p">teksts teksts</p>
-          <button id="remove-btn"><i class="fas fa-times"></i></button>
-        </div>
-        <div class="saved-poem-div">
-          <p class="saved-p">teksts teksts</p>
-          <button id="remove-btn"><i class="fas fa-times"></i></button>
-        </div>
-        <div class="saved-poem-div">
-          <p class="saved-p">teksts teksts</p>
-          <button id="remove-btn"><i class="fas fa-times"></i></button>
-        </div>
-        <div class="saved-poem-div">
-          <p class="saved-p">teksts teksts</p>
-          <button id="remove-btn"><i class="fas fa-times"></i></button>
+  <body>
+    <header>
+      <h1>Meklētājs</h1>
+    </header>
+    <div class="poem-wrapper">
+      <div class="search-wrapper">
+        <div class="search-cards-div">
+          <div class="theme-card" id="b-day">
+            <p>Dzimšanas diena+</p>
+          </div>
+          <div class="theme-card" id="n-day">
+            <p>Vārda diena+</p>
+          </div>
+          <div class="theme-card" id="grad">
+            <p>Ziemassvētki+</p>
+          </div>
+          <div class="theme-card" id="woman">
+            <p>Sieviete+</p>
+          </div>
+          <div class="theme-card" id="love">
+            <p>Mīlestība+</p>
+          </div>
+          <div class="theme-card" id="n-year">
+            <p>Jaunais gads</p>
+          </div>
+          <div class="theme-card" id="man">
+            <p>Vīrietis+</p>
+          </div>
+          <div class="theme-card" id="easter">
+            <p>Lieldienas</p>
+          </div>
+          <div class="theme-card" id="">
+            <p>Kaut kas</p>
+          </div>
+          <div class="theme-card" id="">
+            <p>Latvija</p>
+          </div>
+          <div class="theme-card" id="">
+            <p>Ceļavārdi+</p>
+          </div>
+          <div class="theme-card" id="">
+            <p>Kāzas+</p>
+          </div>
+          <div class="theme-card" id="">
+            <p>Cits</p>
+          </div>
         </div>
       </div>
 
-      <button id="open-btn">Atvērt</button>
+      <div class="results-wrapper" id="results">
+        <div class="poem-card">
+          <h3 class="name"></h3>
+          <p class="poem"></p>
+          <p class="author"></p>
+          <button class="heart-btn"><i class="far fa-heart"> Patīk</i></button>
+        </div>
+      </div>
+
+      <div class="saved-container hidden">
+        <div class="btn-div">
+          <button id="open-btn">Atvērt</button>
+        </div>
+
+        <div class="saved-poem-wrapper">
+          <div class="saved-poem-div">
+            <p class="saved-p">teksts teksts</p>
+            <button id="remove-btn"><i class="fas fa-times"></i></button>
+          </div>
+          <div class="saved-poem-div">
+            <p class="saved-p">
+              teksts teksts Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Quaerat, quibusdam.
+            </p>
+            <button id="remove-btn"><i class="fas fa-times"></i></button>
+          </div>
+          <div class="saved-poem-div">
+            <p class="saved-p">
+              teksts teksts Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Provident totam fugit qui, similique veritatis delectus aut
+              dolores distinctio est cum!
+            </p>
+            <button id="remove-btn"><i class="fas fa-times"></i></button>
+          </div>
+          <div class="saved-poem-div">
+            <p class="saved-p">teksts teksts</p>
+            <button id="remove-btn"><i class="fas fa-times"></i></button>
+          </div>
+          <div class="saved-poem-div">
+            <p class="saved-p">teksts teksts Lorem ipsum dolor sit amet.</p>
+            <button id="remove-btn"><i class="fas fa-times"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="print-back-btn hidden">
+        <button id="back-btn">Atpakaļ</button>
+        <button id="print-btn">Printēt</button>
+      </div>
     </div>
-    <div class="print-back-btn hidden">
-      <button id="back-btn">Atpakaļ</button>
-      <button id="print-btn">Printēt</button>
-    </div>
-  </div>
 
-  <script>
-    let savedPoems = [];
-    const resultsDiv = document.getElementById("results");
-    resultsDiv.classList.add("hidden");
+    <script>
+      let savedPoems = [];
+      const resultsDiv = document.getElementById("results");
+      resultsDiv.classList.add("hidden");
 
-    const cards = document.querySelectorAll(".search-cards-div .theme-card");
-    let likeBtn = document.querySelector(".heart-btn");
-    const savedContainer = document.querySelector(".saved-container");
-    const removeBtns = document.querySelectorAll(
-      ".saved-poem-div #remove-btn"
-    );
-    const openBtn = document.querySelector(".saved-container #open-btn");
+      const cards = document.querySelectorAll(".search-cards-div .theme-card");
+      let likeBtn = document.querySelector(".heart-btn");
+      const savedContainer = document.querySelector(".saved-container");
+      const removeBtns = document.querySelectorAll(
+        ".saved-poem-div #remove-btn"
+      );
+      const openBtn = document.querySelector(".saved-container #open-btn");
+      const wrap = document.querySelector(".saved-poem-wrapper");
+      const searchDiv = document.querySelector(".search-wrapper");
+      const printBackBtns = document.querySelector(".print-back-btn");
+      printBackBtns.classList.add("hidden");
 
-    //Fetch
-    const searchPoems = async (searchText) => {
-      const response = await fetch("dati.json");
-      const poems = await response.json();
+      //Fetch
+      const searchPoems = async (searchText) => {
+        const response = await fetch("dati.json");
+        const poems = await response.json();
 
-      console.log(poems);
+        console.log(poems);
 
-      //Meklēt/filtrēt JSON datus
-      let matches = poems.filter((poem) => {
-        resultsDiv.classList.remove("hidden");
-        const regex = new RegExp(`${searchText}`, "gi");
-        return poem.tēma.match(regex);
+        //Meklēt/filtrēt JSON datus
+        let matches = poems.filter((poem) => {
+          resultsDiv.classList.remove("hidden");
+          const regex = new RegExp(`${searchText}`, "gi");
+          return poem.tēma.match(regex);
 
-        //poem.nosaukums.match(regex) || poem.teksts.match(regex) || poem.autors.match(regex) ||
-      });
-      if (searchText.length === 0) {
-        matches = [];
-        resultsDiv.innerHTML = "";
-      }
-
-      showPoems(matches);
-    };
-
-    //Attēlot izfiltrēto HTML
-    const showPoems = (matches) => {
-      if (matches.length > 0) {
-        // sarindot sakot ar "jaunako"(lielako id)
-        console.log(matches)
-        let sorted = matches.sort((a, b) => {
-          // Trūka return
-          return b.id - a.id;
+          //poem.nosaukums.match(regex) || poem.teksts.match(regex) || poem.autors.match(regex) ||
         });
-        console.log(sorted, "sorted");
+        if (searchText.length === 0) {
+          matches = [];
+          resultsDiv.innerHTML = "";
+        }
 
-        const html = matches
-          .map(
-            (match) =>
-              `
+        showPoems(matches);
+      };
+
+      //Attēlot izfiltrēto HTML
+      const showPoems = (matches) => {
+        if (matches.length > 0) {
+          // sarindot sakot ar "jaunako"(lielako id)
+          console.log(matches);
+          let sorted = matches.sort((a, b) => {
+            // Trūka return
+            return b.id - a.id;
+          });
+          console.log(sorted, "sorted");
+
+          const html = matches
+            .map(
+              (match) =>
+                `
 
             <div class="poem-card line">
               <h3 class="name" >${match.nosaukums}</h3>
               <p class="poem">${match.teksts}</p>
               <p class="author">${match.autors}</p>
-              <button class="heart-btn" onclick='saveText("${match.teksts}", "${match.autors}" )'><i class="far fa-heart"> Patīk</i></button>
+              <div class="btn-cont">
+                <button class="heart-btn" onclick='saveText("${match.teksts}", "${match.autors}" )'><i class="far fa-heart"> Patīk</i></button>
+              </div>
             </div>
           `
-          )
-          .join("");
+            )
+            .join("");
 
-        resultsDiv.innerHTML = html;
-      } else {
-        resultsDiv.innerHTML = "Nekas netika atrasts";
+          resultsDiv.innerHTML = html;
+        } else {
+          resultsDiv.innerHTML = "Nekas netika atrasts";
+        }
+      };
+
+      //Izvēlētie dzejoļi redzami atsevišķā sadaļā
+      function saveText(poemText, poemAuthor) {
+        savedContainer.classList.remove("hidden");
+
+        let savedParag = document.querySelectorAll(".saved-p");
+
+        const savedWrap = document.querySelector(".saved-poem-div");
+
+        // Iepušo saglabātās array, kas nodefinēts 106. rindā
+        savedPoems.push(poemText, poemAuthor);
+
+        // Iestata innerHTML visu array - te vajadzētu vēl apstrādāt
+        savedWrap.innerHTML = savedPoems;
       }
-    };
 
-    //Izvēlētie dzejoļi redzami atsevišķā sadaļā
-    function saveText(poemText, poemAuthor) {
-      savedContainer.classList.remove("hidden");
+      function openSavedPoems() {
+        resultsDiv.classList.add("display-none");
+        searchDiv.classList.add("display-none");
+        savedContainer.classList.remove("saved-container");
+        savedContainer.classList.add("test");
 
-      let savedParag = document.querySelectorAll(".saved-p");
-
-      const savedWrap = document.querySelector(".saved-poem-div");
-
-      // Iepušo saglabātās array, kas nodefinēts 106. rindā
-      savedPoems.push(poemText, poemAuthor);
-
-      // Iestata innerHTML visu array - te vajadzētu vēl apstrādāt
-      savedWrap.innerHTML = savedPoems;
-    }
-
-    function openSavedPoems() {
-      //Lai savedContainer saturs izkārtojas un attēlojas tāpat, kā resultsDiv, header pazūd
-      //vai ir kāds gudrāks veids, nekā visam nevajadzīgajam likt "display none"? piem kāds "replace" vai tml :D
-
-      resultsDiv.style.display = "none";
-      const searchDiv = (document.querySelector(
-        ".search-wrapper"
-      ).style.display = "none");
-      savedContainer.classList.remove("saved-container");
-      savedContainer.classList.add("test");
-
-      const newResults = document.querySelectorAll(".saved-poem-div");
-      newResults.forEach((res) => {
-        res.classList.remove("saved-poem-div");
-        res.classList.add("new-results");
-      });
-
-      const wrap = document
-        .querySelector(".saved-poem-wrapper")
-        .classList.add("new");
-
-      //parādās poga "PRINTĒT" un "ATPAKAĻ"
-      const printBack = document
-        .querySelector(".print-back-btn")
-        .classList.remove("hidden");
-
-      //atvērt poga pazūd
-      openBtn.style.visibility = "hidden";
-    }
-
-    Array.from(cards).forEach((card) => {
-      card.addEventListener("click", (e) => {
-        Array.from(cards).forEach((c) => {
-          c.classList.remove("clicked");
+        const newResults = document.querySelectorAll(".saved-poem-div");
+        newResults.forEach((res) => {
+          res.classList.remove("saved-poem-div");
+          res.classList.add("new-results");
         });
 
-        card.classList.add("clicked");
+        wrap.classList.add("new");
 
-        const clickedCard = e.target;
+        //parādās poga "PRINTĒT" un "ATPAKAĻ"
+        printBackBtns.classList.remove("hidden");
 
-        searchPoems(clickedCard.textContent);
-      });
-    });
+        //atvērt poga pazūd
+        openBtn.classList.add("display-none");
+      }
 
-    likeBtn.addEventListener("click", saveText);
+      Array.from(cards).forEach((card) => {
+        card.addEventListener("click", (e) => {
+          Array.from(cards).forEach((c) => {
+            c.classList.remove("clicked");
+          });
 
-    Array.from(removeBtns).forEach((btn) => {
-      btn.addEventListener("click", (e) => {
-        const sPoemDiv = e.target.parentElement.parentElement;
-        sPoemDiv.parentNode.removeChild(sPoemDiv);
-      });
-    });
+          card.classList.add("clicked");
 
-    openBtn.addEventListener("click", openSavedPoems);
+          const clickedCard = e.target;
 
-
-    const returnBtn = document
-      .querySelector("#back-btn")
-      .addEventListener("click", () => {
-        // Te nenostrādā back, jo lapas adrese nav mainījusies, labāk būtu paslēpt/parādīt elementus
-        window.history.back();
+          searchPoems(clickedCard.textContent);
+        });
       });
 
-    const printBtn = document
-      .querySelector("#print-btn")
-      .addEventListener("click", () => {
-        //pievieno @media print
-      });
-  </script>
-</body>
+      likeBtn.addEventListener("click", saveText);
 
+      Array.from(removeBtns).forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          const sPoemDiv = e.target.parentElement.parentElement;
+          sPoemDiv.parentNode.removeChild(sPoemDiv);
+        });
+      });
+
+      openBtn.addEventListener("click", openSavedPoems);
+
+      const returnBtn = document
+        .querySelector("#back-btn")
+        .addEventListener("click", () => {
+          resultsDiv.classList.remove("display-none");
+          savedContainer.classList.remove("test");
+          savedContainer.classList.add("saved-container");
+          const newResults = document.querySelectorAll(".saved-poem-div");
+          newResults.forEach((res) => {
+            res.classList.remove("new-results");
+            res.classList.add("saved-poem-div");
+          });
+          wrap.classList.remove("new");
+          searchDiv.classList.remove("display-none");
+          openBtn.classList.remove("display-none");
+          printBackBtns.classList.add("hidden");
+        });
+
+      const printBtn = document
+        .querySelector("#print-btn")
+        .addEventListener("click", () => {
+          window.print();
+        });
+    </script>
+  </body>
 </html>

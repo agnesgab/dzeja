@@ -1,0 +1,215 @@
+$primaryColor: #fbaccc;
+$secondaryColor: #f875aa;
+$backgroundColor: #f4f9f9;
+$headingColor: #f1d1d0;
+// text color
+
+@mixin flexCenter($direction, $wrap) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+@mixin gridContainer {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: min-content;
+  margin: 20px;
+}
+
+@mixin buttonBase {
+  background: lightcyan;
+  border-radius: 15px;
+  text-align: center;
+  height: fit-content;
+  min-width: 100px;
+  border: 1px solid black;
+  background-color: rgb(255, 255, 255);
+  margin: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+@mixin buttonHover {
+  background: lightgray;
+}
+
+@mixin poemCard {
+  border: 3px double #f875aa;
+  justify-self: stretch;
+  margin: 20px 10px;
+  padding: 5px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: auto;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background: $backgroundColor;
+}
+
+header {
+  margin: 10px;
+  text-align: center;
+}
+
+h1 {
+  color: $headingColor;
+  font-size: 3.5rem;
+  font-family: "Cabin", sans-serif;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.poem-wrapper {
+  @include flexCenter(column, nowrap);
+  margin: 10px 50px;
+  padding: 10px;
+}
+
+.search-wrapper {
+  @include flexCenter(column, wrap);
+  width: fit-content;
+  background: $primaryColor;
+  border-radius: 15px;
+}
+
+.search-cards-div {
+  @include flexCenter(row, wrap);
+  margin: 10px;
+  .theme-card {
+    @include buttonBase();
+  }
+  .theme-card:hover {
+    @include buttonHover();
+  }
+  .clicked {
+    font-weight: bold;
+  }
+}
+
+.results-wrapper {
+  @include gridContainer();
+  .poem-card {
+    @include poemCard();
+    .author {
+      font-style: italic;
+      margin-top: 10px;
+    }
+    .name {
+      margin-bottom: 10px;
+    }
+    .btn-cont {
+      text-align: center;
+    }
+    .heart-btn {
+      @include buttonBase();
+    }
+    .heart-btn:hover {
+      @include buttonHover();
+    }
+  }
+}
+
+.saved-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 40vh;
+  right: 0vw;
+  width: 160px;
+  height: 300px;
+  overflow-y: auto;
+  padding: 5px;
+  margin: 20px;
+  font-size: 0.8rem;
+  border: 1px rgb(138, 138, 138);
+  opacity: 0.5;
+  .saved-poem-div {
+    @include poemCard();
+    margin: 2px;
+    padding: 2px;
+  }
+  .btn-div {
+    background: $primaryColor;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+  }
+  #open-btn {
+    @include buttonBase();
+  }
+  #open-btn:hover {
+    @include buttonHover();
+  }
+  .new-results {
+    @include poemCard();
+  }
+}
+.saved-container:hover {
+  opacity: 1;
+}
+
+#back-btn,
+#print-btn {
+  @include buttonBase();
+}
+#back-btn:hover,
+#print-btn:hover {
+  @include buttonHover();
+}
+
+.new-results {
+  @include poemCard();
+}
+
+.new {
+  @include gridContainer();
+}
+
+// .test {
+//   @include gridContainer();
+// }
+
+.hidden {
+  visibility: hidden;
+}
+
+.display-none {
+  display: none;
+}
+
+@media print {
+  header,
+  .print-back-btn,
+  #remove-btn {
+    display: none;
+  }
+
+  .new-results {
+    border: 1px solid rgb(110, 110, 110);
+  }
+  p {
+    font-size: 16pt;
+  }
+}
