@@ -75,7 +75,7 @@
         </div>
       </div>
 
-      <div class="saved-container hidden">
+      <div class="saved-container display-none">
         <div class="btn-div">
           <button id="open-btn">Atvērt</button>
         </div>
@@ -110,16 +110,17 @@
           </div>
         </div>
       </div>
-      <div class="print-back-btn hidden">
+      <div class="print-back-btn display-none">
         <button id="back-btn">Atpakaļ</button>
         <button id="print-btn">Printēt</button>
       </div>
     </div>
 
     <script>
-      let savedPoems = [];
+      //let a = {};
+      let savedPoems = []; //šeit iepušot a
       const resultsDiv = document.getElementById("results");
-      resultsDiv.classList.add("hidden");
+      resultsDiv.classList.add("display-none");
 
       const cards = document.querySelectorAll(".search-cards-div .theme-card");
       let likeBtn = document.querySelector(".heart-btn");
@@ -131,18 +132,18 @@
       const wrap = document.querySelector(".saved-poem-wrapper");
       const searchDiv = document.querySelector(".search-wrapper");
       const printBackBtns = document.querySelector(".print-back-btn");
-      printBackBtns.classList.add("hidden");
+      printBackBtns.classList.add("display-none");
 
       //Fetch
       const searchPoems = async (searchText) => {
         const response = await fetch("dati.json");
         const poems = await response.json();
 
-        console.log(poems);
+        //console.log(poems);
 
         //Meklēt/filtrēt JSON datus
         let matches = poems.filter((poem) => {
-          resultsDiv.classList.remove("hidden");
+          resultsDiv.classList.remove("display-none");
           const regex = new RegExp(`${searchText}`, "gi");
           return poem.tēma.match(regex);
 
@@ -159,10 +160,8 @@
       //Attēlot izfiltrēto HTML
       const showPoems = (matches) => {
         if (matches.length > 0) {
-          // sarindot sakot ar "jaunako"(lielako id)
           console.log(matches);
           let sorted = matches.sort((a, b) => {
-            // Trūka return
             return b.id - a.id;
           });
           console.log(sorted, "sorted");
@@ -177,7 +176,7 @@
               <p class="poem">${match.teksts}</p>
               <p class="author">${match.autors}</p>
               <div class="btn-cont">
-                <button class="heart-btn" onclick='saveText("${match.teksts}", "${match.autors}" )'><i class="far fa-heart"> Patīk</i></button>
+                <button class="heart-btn" onclick='saveText("${match.teksts}", "${match.autors}")'><i class="far fa-heart"> Patīk</i></button>
               </div>
             </div>
           `
@@ -192,38 +191,38 @@
 
       //Izvēlētie dzejoļi redzami atsevišķā sadaļā
       function saveText(poemText, poemAuthor) {
-        savedContainer.classList.remove("hidden");
-
+        savedContainer.classList.remove("display-none");
         let savedParag = document.querySelectorAll(".saved-p");
+        let savedWrap = document.querySelector(".saved-poem-div");
 
-        const savedWrap = document.querySelector(".saved-poem-div");
-
-        // Iepušo saglabātās array, kas nodefinēts 106. rindā
+        //Vēlamais:
+        //Katrs izvēlētais dzejolis sagalabājas atsevišķā rāmītī(savedParag), iekš savedWrap
+        //Katram rāmītim pievienojas poga "X", ar kuru pievienoto var dzēst
         savedPoems.push(poemText, poemAuthor);
-
-        // Iestata innerHTML visu array - te vajadzētu vēl apstrādāt
         savedWrap.innerHTML = savedPoems;
+        //Esošais:
+        //Visi dzejoļi saglabājas vienā rāmītī
+        //Pogas nav
       }
 
       function openSavedPoems() {
-        resultsDiv.classList.add("display-none");
-        searchDiv.classList.add("display-none");
+        let dispNone = [resultsDiv, searchDiv, openBtn];
+        dispNone.forEach((d) => d.classList.add("display-none"));
+
         savedContainer.classList.remove("saved-container");
         savedContainer.classList.add("test");
 
-        const newResults = document.querySelectorAll(".saved-poem-div");
-        newResults.forEach((res) => {
-          res.classList.remove("saved-poem-div");
-          res.classList.add("new-results");
-        });
+        const newResults = document
+          .querySelectorAll(".saved-poem-div")
+          .forEach((res) => {
+            res.classList.remove("saved-poem-div");
+            res.classList.add("new-results");
+          });
 
         wrap.classList.add("new");
 
         //parādās poga "PRINTĒT" un "ATPAKAĻ"
-        printBackBtns.classList.remove("hidden");
-
-        //atvērt poga pazūd
-        openBtn.classList.add("display-none");
+        printBackBtns.classList.remove("display-none");
       }
 
       Array.from(cards).forEach((card) => {
@@ -254,18 +253,20 @@
       const returnBtn = document
         .querySelector("#back-btn")
         .addEventListener("click", () => {
-          resultsDiv.classList.remove("display-none");
-          savedContainer.classList.remove("test");
+          let display = [resultsDiv, searchDiv, openBtn, printBackBtns];
+          display.forEach((d) => d.classList.remove("display-none"));
+
+          const newResults = document
+            .querySelectorAll(".saved-poem-div")
+            .forEach((res) => {
+              res.classList.add("saved-poem-div");
+            });
+
           savedContainer.classList.add("saved-container");
-          const newResults = document.querySelectorAll(".saved-poem-div");
-          newResults.forEach((res) => {
-            res.classList.remove("new-results");
-            res.classList.add("saved-poem-div");
-          });
+
           wrap.classList.remove("new");
-          searchDiv.classList.remove("display-none");
-          openBtn.classList.remove("display-none");
-          printBackBtns.classList.add("hidden");
+
+          printBackBtns.classList.add("display-none");
         });
 
       const printBtn = document
