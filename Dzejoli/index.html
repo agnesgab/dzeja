@@ -85,7 +85,7 @@
             <p class="saved-p">teksts teksts</p>
             <button id="remove-btn"><i class="fas fa-times"></i></button>
           </div>
-          <div class="saved-poem-div">
+          <!-- <div class="saved-poem-div">
             <p class="saved-p">
               teksts teksts Lorem ipsum dolor sit amet consectetur adipisicing
               elit. Quaerat, quibusdam.
@@ -107,7 +107,7 @@
           <div class="saved-poem-div">
             <p class="saved-p">teksts teksts Lorem ipsum dolor sit amet.</p>
             <button id="remove-btn"><i class="fas fa-times"></i></button>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="print-back-btn display-none">
@@ -126,7 +126,7 @@
       let likeBtn = document.querySelector(".heart-btn");
       const savedContainer = document.querySelector(".saved-container");
       const removeBtns = document.querySelectorAll(
-        ".saved-poem-div #remove-btn"
+        ".saved-poem-div .remove-btn"
       );
       const openBtn = document.querySelector(".saved-container #open-btn");
       const wrap = document.querySelector(".saved-poem-wrapper");
@@ -176,7 +176,7 @@
               <p class="poem">${match.teksts}</p>
               <p class="author">${match.autors}</p>
               <div class="btn-cont">
-                <button class="heart-btn" onclick='saveText("${match.teksts}", "${match.autors}")'><i class="far fa-heart"> Patīk</i></button>
+                <button class="heart-btn" onclick='saveText("${match.teksts}", "${match.autors}", "${match.id}")'><i class="far fa-heart"> Patīk</i></button>
               </div>
             </div>
           `
@@ -190,16 +190,46 @@
       };
 
       //Izvēlētie dzejoļi redzami atsevišķā sadaļā
-      function saveText(poemText, poemAuthor) {
+      function saveText(poemText, poemAuthor, poemId) {
         savedContainer.classList.remove("display-none");
         let savedParag = document.querySelectorAll(".saved-p");
         let savedWrap = document.querySelector(".saved-poem-div");
 
+        const savedPoem = `
+        <div class="saved-poem-div" data-id=${poemId}>
+            <p class="saved-p">${poemText}</p>
+            <button class="remove-btn" data-id=${poemId}><i class="fas fa-times"></i></button>
+          </div>
+          `;
         //Vēlamais:
         //Katrs izvēlētais dzejolis sagalabājas atsevišķā rāmītī(savedParag), iekš savedWrap
         //Katram rāmītim pievienojas poga "X", ar kuru pievienoto var dzēst
-        savedPoems.push(poemText, poemAuthor);
-        savedWrap.innerHTML = savedPoems;
+        savedPoems.push({ id: poemId, html: savedPoem });
+
+        let poems = [];
+        const html = savedPoems.forEach((poem) => {
+          poems.push(poem.html);
+        });
+
+        savedWrap.innerHTML = poems;
+
+        const deleteButtons = document
+          .querySelectorAll(".remove-btn")
+          .forEach((btn) => {
+            btn.addEventListener("click", (event) => {
+              const id = event.target.parentElement.getAttribute("data-id");
+              console.log(id);
+              savedPoems.splice(
+                savedPoems.findIndex(function (i) {
+                  return i.id === id;
+                }),
+                1
+              );
+              const poemToDelete = document
+                .querySelector(`.saved-poem-div[data-id="${id}"]`)
+                .remove();
+            });
+          });
         //Esošais:
         //Visi dzejoļi saglabājas vienā rāmītī
         //Pogas nav
