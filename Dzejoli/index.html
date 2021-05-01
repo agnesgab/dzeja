@@ -82,8 +82,8 @@
 
         <div class="saved-poem-wrapper">
           <div class="saved-poem-div">
-            <p class="saved-p">teksts teksts</p>
-            <button id="remove-btn"><i class="fas fa-times"></i></button>
+            <!-- <p class="saved-p">teksts teksts</p>
+            <button id="remove-btn"><i class="fas fa-times"></i></button> -->
           </div>
           <!-- <div class="saved-poem-div">
             <p class="saved-p">
@@ -193,7 +193,9 @@
       function saveText(poemText, poemAuthor, poemId) {
         savedContainer.classList.remove("display-none");
         let savedParag = document.querySelectorAll(".saved-p");
-        let savedWrap = document.querySelector(".saved-poem-div");
+        let savedWrap = document.querySelector(".saved-poem-div")
+          ? document.querySelector(".saved-poem-div")
+          : document.querySelector(".saved-container");
 
         const savedPoem = `
         <div class="saved-poem-div" data-id=${poemId}>
@@ -225,9 +227,13 @@
                 }),
                 1
               );
-              const poemToDelete = document
-                .querySelector(`.saved-poem-div[data-id="${id}"]`)
-                .remove();
+              const poemToDelete = document.querySelector(
+                `.saved-poem-div[data-id="${id}"]`
+              )
+                ? document.querySelector(`.saved-poem-div[data-id="${id}"]`)
+                : document.querySelector(`.new-results[data-id="${id}"]`);
+
+              poemToDelete.remove();
             });
           });
         //Esošais:
