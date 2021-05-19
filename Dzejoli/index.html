@@ -33,45 +33,23 @@
   </head>
 
   <body>
-      <header>
-        <h1 class="heading-main">Lido doma</h1>
-      </header>
-      <div class="poem-wrapper">
+    <header>
+      <h1 class="heading-main">Lido doma</h1>
+    </header>
+    <div class="poem-wrapper">
       <div class="search-wrapper">
         <div class="search-cards-div">
-          <div class="theme-card">
-            <h2>Dzimšanas diena</h2>
-          </div>
-          <div class="theme-card border-pop">
-            <h2>Vārda diena</h2>
-          </div>
-          <div class="theme-card">
-            <h2>Ziemassvētki</h2>
-          </div>
-          <div class="theme-card">
-            <h2>Sieviete</h2>
-          </div>
-          <div class="theme-card">
-            <h2>Mīlestība</h2>
-          </div>
-          <div class="theme-card">
-            <h2>Vīrietis</h2>
-          </div>
-          <div class="theme-card">
-            <h2>Ceļavārdi</h2>
-          </div>
-          <div class="theme-card">
-            <h2>Kāzas</h2>
-          </div>
-          <div class="theme-card">
-            <h2>Bērns</h2>
-          </div>
-          <div class="theme-card">
-            <h2>Lieldienas</h2>
-          </div>
-          <div class="theme-card">
-            <h2>Dažādi</h2>
-          </div>
+          <div class="theme-card">Dzimšanas diena</div>
+          <div class="theme-card border-pop">Vārda diena</div>
+          <div class="theme-card">Ziemassvētki</div>
+          <div class="theme-card">Sieviete</div>
+          <div class="theme-card">Mīlestība</div>
+          <div class="theme-card">Vīrietis</div>
+          <div class="theme-card">Ceļavārdi</div>
+          <div class="theme-card">Kāzas</div>
+          <div class="theme-card">Bērns</div>
+          <div class="theme-card">Lieldienas</div>
+          <div class="theme-card">Dažādi</div>
         </div>
       </div>
 
@@ -102,9 +80,8 @@
       </div>
     </div>
 
-    </div>
-
     <script>
+      let loadedPoems = [];
       let savedPoems = [];
       //sections:
       const searchDiv = document.querySelector(".search-wrapper");
@@ -117,11 +94,17 @@
       const printBackBtns = document.querySelector(".print-back-btn");
       printBackBtns.classList.add("display-none");
 
-      //Fetch
-      const searchPoems = async (searchText) => {
+      // Get initial data
+      async function fetchPoems() {
         const response = await fetch("dati.json");
-        const poems = await response.json();
+        loadedPoems = await response.json();
+      }
 
+      fetchPoems();
+
+      //Fetch
+      const searchPoems = (searchText) => {
+        poems = loadedPoems;
         //console.log(poems);
 
         //Filter
@@ -143,17 +126,14 @@
       //Sort, add HTML
       const showPoems = (matches) => {
         if (matches.length > 0) {
-          console.log(matches);
           let sorted = matches.sort((a, b) => {
             return b.id - a.id;
           });
-          console.log(sorted, "sorted");
 
           const html = matches
             .map(
               (match) =>
                 `
-
             <div class="poem-card line">
               <h3 class="name" >${match.nosaukums}</h3>
               <p class="poem">${match.teksts}</p>
@@ -187,19 +167,21 @@
              </div>
           `;
 
-        savedPoems.push({ id: poemId, html: savedPoem });
+        const isAlreadySaved = savedPoems.find((x) => x.id == poemId);
+        if (!isAlreadySaved) {
+          savedPoems.push({ id: poemId, html: savedPoem });
 
-        let poems = [];
-        
-        
-        const html = savedPoems.forEach((poem) => {
-          poems.push(poem.html);
-        });
-        //console.log(poems.includes());
+          let poems = [];
 
-        savedPoemDiv.innerHTML = poems.join(" ");
+          const html = savedPoems.forEach((poem) => {
+            poems.push(poem.html);
+          });
+          //console.log(poems.includes());
 
-        removePoems(poemId, savedPoems);
+          savedPoemDiv.innerHTML = poems.join(" ");
+
+          removePoems(poemId, savedPoems);
+        }
       }
 
       function removePoems(poemId, savedPoems) {
@@ -251,7 +233,7 @@
           card.classList.add("clicked");
 
           const clickedCard = e.target;
-
+          console.log(clickedCard);
           searchPoems(clickedCard.textContent);
         });
       });
