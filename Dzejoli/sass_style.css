@@ -1,16 +1,24 @@
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   margin: auto;
   padding: 0;
 }
 
 html {
   font-size: 100%;
+  color: black;
+  scroll-behavior: smooth;
 }
 
 body {
-  background: #f4f9f9;
+  background: #f1f0f0;
+  background-image: url(sirdis1.png);
+  background-size: 100%;
+  background-position-x: -40%;
+  background-position-y: 20%;
+  background-repeat: repeat;
+  margin-top: 100px;
 }
 
 header {
@@ -18,20 +26,60 @@ header {
   text-align: center;
 }
 
+@-webkit-keyframes heading-animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
+    -webkit-transition: cubic-bezier(0.4, 0.38, 0.3, 1.11);
+    transition: cubic-bezier(0.4, 0.38, 0.3, 1.11);
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes heading-animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
+    -webkit-transition: cubic-bezier(0.4, 0.38, 0.3, 1.11);
+    transition: cubic-bezier(0.4, 0.38, 0.3, 1.11);
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 h1 {
-  color: #f1d1d0;
-  font-size: 3.5rem;
-  font-family: "Cabin", sans-serif;
+  -webkit-animation-name: heading-animation;
+          animation-name: heading-animation;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  margin-top: 30px;
+  color: #00005c;
+  font-size: 5rem;
+  font-family: "Dancing Script", cursive;
   font-style: italic;
 }
 
 h2 {
-  font-size: 1.5rem;
-  margin-top: 10px;
+  font-size: 1rem;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .poem-wrapper {
@@ -39,17 +87,17 @@ p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+      flex-wrap: nowrap;
   margin: 10px 50px;
   padding: 10px;
 }
@@ -59,83 +107,93 @@ p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  background: #fbaccc;
+  background: rgba(192, 96, 161, 0.6);
   border-radius: 15px;
 }
 
-.search-cards-div {
+.search-wrapper .search-cards-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 10px;
 }
 
-.search-cards-div .theme-card {
+.search-wrapper .search-cards-div .theme-card {
   background: lightcyan;
   border-radius: 15px;
   text-align: center;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  min-width: 100px;
-  border: 1px solid black;
   background-color: white;
   margin: 10px;
-  padding: 5px;
+  padding: 5px 15px 5px 15px;
   cursor: pointer;
+  min-width: 120px;
+  padding: auto 10px aut0 10px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
-.search-cards-div .theme-card:hover {
-  background: lightgray;
+.search-wrapper .search-cards-div .theme-card:hover,
+.search-wrapper .search-cards-div .theme-card:focus {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
-.search-cards-div .clicked {
-  font-weight: bold;
+.clicked {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  border: 1px solid black;
+  pointer-events: none;
 }
 
 .results-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 300px 300px 300px;
-  grid-template-columns: 300px 300px 300px;
   -ms-grid-rows: min-content;
-  grid-template-rows: -webkit-min-content;
-  grid-template-rows: min-content;
+      grid-template-rows: -webkit-min-content;
+      grid-template-rows: min-content;
   margin: 20px;
+  -ms-grid-columns: 300px 300px 300px;
+      grid-template-columns: 300px 300px 300px;
 }
 
 .results-wrapper .poem-card {
-  border: 3px double #f875aa;
+  border: 3px double #6a097d;
   -ms-grid-column-align: stretch;
-  justify-self: stretch;
+      justify-self: stretch;
   margin: 20px 10px;
-  padding: 5px;
+  padding: 10px;
+  background-color: white;
 }
 
 .results-wrapper .poem-card .author {
@@ -158,93 +216,125 @@ p {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  min-width: 100px;
-  border: 1px solid black;
   background-color: white;
   margin: 10px;
-  padding: 5px;
+  padding: 5px 15px 5px 15px;
   cursor: pointer;
+  border: 1px solid #6a097d;
+  min-width: 80px;
+}
+
+.results-wrapper .poem-card .fa-heart {
+  color: #6a097d;
 }
 
 .results-wrapper .poem-card .heart-btn:hover {
-  background: lightgray;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 
-.saved-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: fixed;
-  top: 40vh;
-  right: 0vw;
-  width: 160px;
-  height: 300px;
-  overflow-y: auto;
-  padding: 5px;
-  margin: 20px;
-  font-size: 0.8rem;
-  border: 1px #8a8a8a;
-  opacity: 0.5;
+.results-wrapper .poem-card .heart-btn:active {
+  border: 3px solid #6a097d;
+  -webkit-transition: 0.2s all ease;
+  transition: 0.2s all ease;
 }
 
-.saved-container .saved-poem-div {
-  border: 3px double #f875aa;
-  -ms-grid-column-align: stretch;
-  justify-self: stretch;
-  margin: 20px 10px;
-  padding: 5px;
-  margin: 2px;
-  padding: 2px;
+.results-wrapper .poem-card .heart-btn:active .fa-heart {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: 0.2s all ease;
+  transition: 0.2s all ease;
 }
 
-.saved-container .btn-div {
-  background: #fbaccc;
-  width: 100%;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+.open-liked {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin: 2px;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: fixed;
+  bottom: 20px;
+  left: 30px;
+  font-size: 1em;
+  background-color: rgba(192, 96, 161, 0.6);
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-animation-name: flash;
+          animation-name: flash;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
-.saved-container #open-btn {
+.open-liked:hover {
+  background-color: #6a097d;
+}
+
+.saved-poem-div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: min-content;
+      grid-template-rows: -webkit-min-content;
+      grid-template-rows: min-content;
+  margin: 20px;
+  -ms-grid-columns: 300px 300px 300px;
+      grid-template-columns: 300px 300px 300px;
+}
+
+.saved-poem-div .new-results {
+  border: 3px double #6a097d;
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+  margin: 20px 10px;
+  padding: 10px;
+  background-color: white;
+}
+
+.saved-poem-div .btn-cont2 {
+  text-align: center;
+}
+
+.saved-poem-div .remove-btn {
   background: lightcyan;
   border-radius: 15px;
   text-align: center;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  min-width: 100px;
-  border: 1px solid black;
   background-color: white;
   margin: 10px;
-  padding: 5px;
+  padding: 5px 15px 5px 15px;
   cursor: pointer;
+  border: 1px solid #6a097d;
+  width: 50px;
+  clear: both;
 }
 
-.saved-container #open-btn:hover {
-  background: lightgray;
+.saved-poem-div .remove-btn:hover {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
-.saved-container .new-results {
-  border: 3px double #f875aa;
-  -ms-grid-column-align: stretch;
-  justify-self: stretch;
-  margin: 20px 10px;
-  padding: 5px;
-}
-
-.saved-container:hover {
-  opacity: 1;
+.print-back-btn {
+  background-color: rgba(192, 96, 161, 0.6);
+  border-radius: 15px;
 }
 
 #back-btn,
@@ -255,40 +345,51 @@ p {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  min-width: 100px;
-  border: 1px solid black;
   background-color: white;
   margin: 10px;
-  padding: 5px;
+  padding: 5px 15px 5px 15px;
   cursor: pointer;
+  border: none;
+  min-width: 100px;
 }
 
 #back-btn:hover,
 #print-btn:hover {
-  background: lightgray;
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
-.new-results {
-  border: 3px double #f875aa;
-  -ms-grid-column-align: stretch;
-  justify-self: stretch;
-  margin: 20px 10px;
-  padding: 5px;
+#scroll-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  background-color: rgba(192, 96, 161, 0.6);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#scroll-btn:hover {
+  background-color: #6a097d;
 }
 
 .new {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 300px 300px 300px;
-  grid-template-columns: 300px 300px 300px;
   -ms-grid-rows: min-content;
-  grid-template-rows: -webkit-min-content;
-  grid-template-rows: min-content;
+      grid-template-rows: -webkit-min-content;
+      grid-template-rows: min-content;
   margin: 20px;
-}
-
-.hidden {
-  visibility: hidden;
+  -ms-grid-columns: 300px 300px 300px;
+      grid-template-columns: 300px 300px 300px;
 }
 
 .display-none {
@@ -298,13 +399,15 @@ p {
 @media print {
   header,
   .print-back-btn,
-  #remove-btn {
+  .btn-cont2,
+  .open-liked {
     display: none;
   }
-  .new-results {
+  .saved-poem-div .new-results {
     border: 1px solid #6e6e6e;
   }
   p {
+    padding: 5px;
     font-size: 16pt;
   }
 }
