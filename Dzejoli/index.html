@@ -35,6 +35,12 @@
   <body>
     <header>
       <h1 class="heading-main">Lido doma</h1>
+      <p class="quote">
+        Prieks ir izstarot un izdalīt. Izdalīt to, kas mums pieder.<br />
+        Vienalga, vai tā būtu maize vai māja, doma vai sapnis,<br />
+        un zināt, ka ir kāds, kas to saņem.<br />
+        Z. Mauriņa
+      </p>
     </header>
     <div class="poem-wrapper">
       <div class="search-wrapper">
@@ -72,7 +78,10 @@
       </button>
 
       <div class="open-liked display-none">
-        <h3>Atzīmēts ar <i class="fas fa-heart"></i></h3>
+        <h3>
+          <span class="full-txt">Atzīmēts ar</span>
+          <i class="fas fa-heart"></i>
+        </h3>
       </div>
 
       <div class="saved-poem-container display-none">
@@ -139,7 +148,7 @@
               <p class="poem">${match.teksts}</p>
               <p class="author">${match.autors}</p>
               <div class="btn-cont">
-                <button class="heart-btn" onclick='saveText("${match.teksts}", "${match.autors}", "${match.id}")'><i class="fas fa-heart"></i> Patīk</button>
+                <button class="heart-btn" onclick='saveText("${match.teksts}", "${match.autors}", "${match.id}"); animateLikeOn()'><i class="fas fa-heart"></i></button>
               </div>
             </div>
           `
@@ -155,6 +164,8 @@
       //Push & show liked poems
       function saveText(poemText, poemAuthor, poemId) {
         openLikedPoems.classList.remove("display-none");
+        setTimeout(animateLikeOn, 100);
+
         let savedPoemDiv = document.querySelector(".saved-poem-div");
 
         const savedPoem = `
@@ -176,12 +187,22 @@
           const html = savedPoems.forEach((poem) => {
             poems.push(poem.html);
           });
-          //console.log(poems.includes());
 
           savedPoemDiv.innerHTML = poems.join(" ");
 
           removePoems(poemId, savedPoems);
         }
+      }
+
+      function animateLikeOn(e) {
+        openLikedPoems.classList.add("animated-like");
+        setTimeout(animateLikeOff, 200);
+        scrollBtn.classList.add("animated-like");
+      }
+
+      function animateLikeOff() {
+        openLikedPoems.classList.remove("animated-like");
+        scrollBtn.classList.remove("animated-like");
       }
 
       function removePoems(poemId, savedPoems) {
@@ -206,8 +227,7 @@
       }
 
       function openSavedPoems() {
-        let top = window.scrollY;
-        top = 0;
+        window.scrollTo(0, 0);
         savedContainer.classList.remove("display-none");
 
         let dispNone = [resultsDiv, searchDiv];
@@ -254,6 +274,7 @@
       scrollBtn.addEventListener("click", () => {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
+        animateLikeOn();
       });
 
       const scrollBtnVisibility = () => {
