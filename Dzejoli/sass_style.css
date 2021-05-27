@@ -126,7 +126,7 @@ p {
           flex-direction: column;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  margin: 10px 50px;
+  margin: 10px auto;
   padding: 10px;
 }
 
@@ -222,7 +222,7 @@ p {
   border: 3px double #6a097d;
   -ms-grid-column-align: stretch;
       justify-self: stretch;
-  margin: 20px 10px;
+  margin: 10px 10px;
   padding: 10px;
   background-color: white;
 }
@@ -319,6 +319,26 @@ p {
   background-color: rgba(106, 9, 125, 0.8);
 }
 
+.saved-poem-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 10px auto;
+  padding: 10px;
+}
+
 .saved-poem-div {
   display: -ms-grid;
   display: grid;
@@ -334,7 +354,7 @@ p {
   border: 3px double #6a097d;
   -ms-grid-column-align: stretch;
       justify-self: stretch;
-  margin: 20px 10px;
+  margin: 10px 10px;
   padding: 10px;
   background-color: white;
 }
@@ -386,6 +406,8 @@ p {
   cursor: pointer;
   border: none;
   min-width: 120px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
 }
 
 #back-btn:hover,
@@ -451,14 +473,16 @@ p {
   body {
     margin-top: 10px;
   }
-  h1 {
+  header h1 {
+    margin-top: 20px;
     -webkit-animation: none;
             animation: none;
-    font-size: 80px;
-    margin-top: 30px;
+    font-size: 60px;
   }
-  p {
-    font-size: 20px;
+  header .quote {
+    font-size: 18px;
+    -webkit-animation: none;
+            animation: none;
   }
   .search-cards-div {
     display: -webkit-box;
@@ -476,26 +500,21 @@ p {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-bottom: 10px;
   }
-  .search-cards-div .theme-card {
-    min-width: 200px;
+  .search-wrapper .search-cards-div .theme-card {
+    min-width: 160px;
     padding: auto 10px auto 10px;
-    margin-top: 10px;
-    font-size: 22px;
+    margin: 5px 10px;
+    font-size: 18px;
   }
   .results-wrapper {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: min-content;
-        grid-template-rows: -webkit-min-content;
-        grid-template-rows: min-content;
     margin: 5px;
     -ms-grid-columns: 300px 300px;
         grid-template-columns: 300px 300px;
   }
   .results-wrapper .poem-card {
-    margin: 5px 5px;
+    margin: 5px;
+    font-size: 18px;
   }
   #scroll-btn {
     padding: 15px;
@@ -511,14 +530,12 @@ p {
     display: none;
   }
   .saved-poem-div {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: min-content;
-        grid-template-rows: -webkit-min-content;
-        grid-template-rows: min-content;
-    margin: 20px;
+    margin: 5px;
     -ms-grid-columns: 300px 300px;
         grid-template-columns: 300px 300px;
+  }
+  .saved-poem-div .new-results {
+    margin: 5px;
   }
   .print-back-btn {
     width: 220px;
@@ -529,6 +546,7 @@ p {
   }
   .print-back-btn #back-btn {
     width: 150px;
+    font-size: 18px;
   }
 }
 
@@ -536,18 +554,14 @@ p {
   body {
     margin-top: 10px;
   }
-  header {
-    margin: 10px;
-    text-align: center;
-  }
   header h1 {
+    margin-top: 20px;
     -webkit-animation: none;
             animation: none;
-    margin-top: 30px;
     font-size: 50px;
   }
   header .quote {
-    font-size: 15px;
+    font-size: 16px;
     -webkit-animation: none;
             animation: none;
   }
@@ -568,59 +582,35 @@ p {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     width: 250px;
+    margin: 10px;
   }
-  .search-cards-div .theme-card {
-    width: 210px;
-    padding: auto 10px auto 10px;
-    margin-top: 10px;
+  .search-wrapper .search-cards-div .theme-card {
+    margin: 5px;
+    font-size: 18px;
   }
   .results-wrapper {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: min-content;
-        grid-template-rows: -webkit-min-content;
-        grid-template-rows: min-content;
     margin: 5px;
-    -ms-grid-columns: 300px;
-        grid-template-columns: 300px;
+    -ms-grid-columns: 260px;
+        grid-template-columns: 260px;
   }
   .results-wrapper .poem-card {
-    margin: 5px 10px;
+    margin: 5px;
+    font-size: 16px;
   }
-  #scroll-btn {
-    padding: 10px;
-    right: 10px;
-  }
+  #scroll-btn,
   .open-liked {
-    width: 44px;
-    height: 48px;
-    left: 10px;
-  }
-  .open-liked .full-txt {
-    display: none;
+    margin: 2px;
   }
   .saved-poem-div {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: min-content;
-        grid-template-rows: -webkit-min-content;
-        grid-template-rows: min-content;
-    margin: 20px;
-    -ms-grid-columns: 300px;
-        grid-template-columns: 300px;
+    margin: 5px;
+    -ms-grid-columns: 260px;
+        grid-template-columns: 260px;
   }
-  .print-back-btn {
-    width: 220px;
-    text-align: center;
+  .saved-poem-div .new-results {
+    margin: 5px;
   }
-  .print-back-btn #print-btn {
-    display: none;
-  }
-  .print-back-btn #back-btn {
-    width: 150px;
-  }
-  #scroll-btn:hover {
-    background-color: rgba(192, 96, 161, 0.6);
+  #back-btn {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=sass_style.css.map */

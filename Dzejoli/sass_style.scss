@@ -39,7 +39,7 @@ $fontFamily: "Source Sans Pro", sans-serif;
 @mixin poemCard {
   border: 3px double $secondaryColor;
   justify-self: stretch;
-  margin: 20px 10px;
+  margin: 10px 10px;
   padding: 10px;
   background-color: white;
 }
@@ -122,7 +122,7 @@ p {
 
 .poem-wrapper {
   @include flexCenter(column, nowrap);
-  margin: 10px 50px;
+  margin: 10px auto;
   padding: 10px;
 }
 
@@ -220,6 +220,11 @@ p {
   background-color: rgba(106, 9, 125, 0.8);
 }
 
+.saved-poem-container {
+  @include flexCenter(column, nowrap);
+  margin: 10px auto;
+  padding: 10px;
+}
 .saved-poem-div {
   @include gridContainer();
   .new-results {
@@ -250,6 +255,8 @@ p {
   @include buttonBase();
   border: none;
   min-width: 120px;
+  font-family: $fontFamily;
+  font-size: 20px;
 }
 #back-btn:hover,
 #print-btn:hover {
@@ -305,33 +312,33 @@ p {
   body {
     margin-top: 10px;
   }
-  h1 {
-    animation: none;
-    font-size: 80px;
-    margin-top: 30px;
-  }
-  p {
-    font-size: 20px;
+  header {
+    h1 {
+      margin-top: 20px;
+      animation: none;
+      font-size: 60px;
+    }
+    .quote {
+      font-size: 18px;
+      animation: none;
+    }
   }
   .search-cards-div {
     @include flexCenter(row, wrap);
-    margin-bottom: 10px;
-
-    .theme-card {
-      min-width: 200px;
-      padding: auto 10px auto 10px;
-      margin-top: 10px;
-      font-size: 22px;
-    }
+  }
+  .search-wrapper .search-cards-div .theme-card {
+    min-width: 160px;
+    padding: auto 10px auto 10px;
+    margin: 5px 10px;
+    font-size: 18px;
   }
   .results-wrapper {
-    display: grid;
-    grid-template-rows: min-content;
     margin: 5px;
     grid-template-columns: 300px 300px;
   }
   .results-wrapper .poem-card {
-    margin: 5px 5px;
+    margin: 5px;
+    font-size: 18px;
   }
 
   #scroll-btn {
@@ -347,11 +354,13 @@ p {
   .open-liked .full-txt {
     display: none;
   }
+
   .saved-poem-div {
-    display: grid;
-    grid-template-rows: min-content;
-    margin: 20px;
+    margin: 5px;
     grid-template-columns: 300px 300px;
+    .new-results {
+      margin: 5px;
+    }
   }
   .print-back-btn {
     width: 220px;
@@ -361,6 +370,7 @@ p {
     }
     #back-btn {
       width: 150px;
+      font-size: 18px;
     }
   }
 }
@@ -370,67 +380,49 @@ p {
     margin-top: 10px;
   }
   header {
-    margin: 10px;
-    text-align: center;
     h1 {
+      margin-top: 20px;
       animation: none;
-      margin-top: 30px;
       font-size: 50px;
     }
     .quote {
-      font-size: 15px;
+      font-size: 16px;
       animation: none;
     }
   }
   .search-cards-div {
     @include flexCenter(column, nowrap);
     width: 250px;
-
-    .theme-card {
-      width: 210px;
-      padding: auto 10px auto 10px;
-      margin-top: 10px;
-    }
+    margin: 10px;
   }
-  .results-wrapper {
-    display: grid;
-    grid-template-rows: min-content;
+
+  .search-wrapper .search-cards-div .theme-card {
     margin: 5px;
-    grid-template-columns: 300px;
+    font-size: 18px;
+  }
+
+  .results-wrapper {
+    margin: 5px;
+    grid-template-columns: 260px;
   }
   .results-wrapper .poem-card {
-    margin: 5px 10px;
+    margin: 5px;
+    font-size: 16px;
   }
 
-  #scroll-btn {
-    padding: 10px;
-    right: 10px;
-  }
+  #scroll-btn,
   .open-liked {
-    width: 44px;
-    height: 48px;
-    left: 10px;
+    margin: 2px;
   }
-  .open-liked .full-txt {
-    display: none;
-  }
+
   .saved-poem-div {
-    display: grid;
-    grid-template-rows: min-content;
-    margin: 20px;
-    grid-template-columns: 300px;
-  }
-  .print-back-btn {
-    width: 220px;
-    text-align: center;
-    #print-btn {
-      display: none;
-    }
-    #back-btn {
-      width: 150px;
+    margin: 5px;
+    grid-template-columns: 260px;
+    .new-results {
+      margin: 5px;
     }
   }
-  #scroll-btn:hover {
-    background-color: $primaryColor;
+  #back-btn {
+    font-size: 18px;
   }
 }
